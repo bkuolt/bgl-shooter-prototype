@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="renderbender2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="BSP\;BSP\Visibility\;BSP\Render\;BSP\Weapon\;Kollisionserkennung\BGL\;Kollisionserkennung\;Parser\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\renderbender2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\glut32.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\ILUT.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\DevIL.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\ILU.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\libopengl32.a" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\libglu32.a" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\alut.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\OpenAL32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\renderbender2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\glut32.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\ILUT.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\DevIL.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\ILU.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\libopengl32.a" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\libglu32.a" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\alut.lib" />
+					<Add library="D:\Programme\CodeBlocks\MinGW\lib\OpenAL32.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="BSP.h">
+			<Option virtualFolder="BSP\" />
+		</Unit>
+		<Unit filename="Baum.cpp">
+			<Option virtualFolder="BSP\Visibility\" />
+		</Unit>
+		<Unit filename="BoundingBox.cpp">
+			<Option virtualFolder="Kollisionserkennung\BGL\" />
+		</Unit>
+		<Unit filename="BoundingBox.h">
+			<Option virtualFolder="Kollisionserkennung\BGL\" />
+		</Unit>
+		<Unit filename="BoundingVolume.h">
+			<Option virtualFolder="Kollisionserkennung\BGL\" />
+		</Unit>
+		<Unit filename="Brush.cpp">
+			<Option virtualFolder="Kollisionserkennung\" />
+		</Unit>
+		<Unit filename="Brush.h">
+			<Option virtualFolder="Kollisionserkennung\" />
+		</Unit>
+		<Unit filename="Camera.cpp">
+			<Option virtualFolder="Kollisionserkennung\BGL\" />
+		</Unit>
+		<Unit filename="Config.h">
+			<Option virtualFolder="Parser\" />
+		</Unit>
+		<Unit filename="CoordinateSystem.cpp" />
+		<Unit filename="CoordinateSystem.h" />
+		<Unit filename="Frustum.cpp">
+			<Option virtualFolder="Kollisionserkennung\BGL\" />
+		</Unit>
+		<Unit filename="GLee.h" />
+		<Unit filename="IDMD2.h">
+			<Option virtualFolder="BSP\Weapon\" />
+		</Unit>
+		<Unit filename="MD2.h">
+			<Option virtualFolder="BSP\Weapon\" />
+		</Unit>
+		<Unit filename="Plane.h">
+			<Option virtualFolder="Kollisionserkennung\" />
+		</Unit>
+		<Unit filename="Skybox.h">
+			<Option virtualFolder="BSP\Render\" />
+		</Unit>
+		<Unit filename="SpeedUp.cpp">
+			<Option virtualFolder="BSP\Render\" />
+		</Unit>
+		<Unit filename="Vector.h">
+			<Option virtualFolder="Kollisionserkennung\" />
+		</Unit>
+		<Unit filename="config.cpp">
+			<Option virtualFolder="Parser\" />
+		</Unit>
+		<Unit filename="data.cpp">
+			<Option virtualFolder="BSP\" />
+		</Unit>
+		<Unit filename="draw.cpp">
+			<Option virtualFolder="BSP\Render\" />
+		</Unit>
+		<Unit filename="glee.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="header.h" />
+		<Unit filename="lightmap.cpp">
+			<Option virtualFolder="BSP\Render\" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

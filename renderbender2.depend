@@ -1,0 +1,1712 @@
+# depslib dependency file v1.0
+1302398684 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\draw.cpp
+	"BSP.h"
+
+1302392946 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\bsp.h
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+
+1302391506 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\header.h
+
+1302398936 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\main.cpp
+	"Windows.h"
+	<GL/glut.h>
+	"BSP.h"
+	<stdlib.h>
+
+1302395930 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\data.cpp
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302398910 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2\tree.cpp
+	"BSP.h"
+	<utility>
+
+1302465486 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302466343 c:\dokumente und einstellungen\computer1\desktop\renderbender2\bsp.h
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+
+1302391508 c:\dokumente und einstellungen\computer1\desktop\renderbender2\header.h
+
+1302456394 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2\draw.cpp
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302467140 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<stdlib.h>
+
+1302467103 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2\tree.cpp
+	"BSP.h"
+	<utility>
+
+1302451934 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302451903 c:\dokumente und einstellungen\computer1\desktop\renderbender2\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302642070 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\draw.cpp
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302642035 c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\bsp.h
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+
+1302391508 c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\header.h
+
+1302451936 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302451904 c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302467142 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<stdlib.h>
+
+1302467256 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\tree.cpp
+	"BSP.h"
+	<utility>
+
+1302641685 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302642020 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 latest\lightmap.cpp
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	<cstring>
+	<cstdlib>
+
+1302645587 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\data.cpp
+	"Windows.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302644999 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+
+1302391508 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\header.h
+
+1302649551 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302649832 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\lightmap.cpp
+	"Windows.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	<cstring>
+	<cstdlib>
+
+1302467256 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\tree.cpp
+	"BSP.h"
+	<utility>
+
+1302652894 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+
+1234032360 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302786247 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\data.cpp
+	"Windows.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302783328 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+
+1302391508 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\header.h
+
+1302784898 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1234032360 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302786121 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\lightmap.cpp
+	"Windows.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	<cstring>
+	<cstdlib>
+
+1302784928 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+
+1302467256 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht\tree.cpp
+	"BSP.h"
+	<utility>
+
+1234032360 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1234032360 c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302904300 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1302980468 c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+
+1302391508 c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\header.h
+
+1302985287 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+
+1302985644 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\tree.cpp
+	"BSP.h"
+	<utility>
+	<bitset>
+	<vector>
+
+1302985336 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1302960324 source:c:\dokumente und einstellungen\computer1\desktop\renderbender2 mit lightmaps geht bessere lightmaps\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303002537 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302995586 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+
+1302391508 c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\header.h
+
+1302960324 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302904300 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303005381 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+
+1303003265 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\tree.cpp
+	"BSP.h"
+	<utility>
+	<bitset>
+	<vector>
+
+1302976726 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1302955335 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+
+1302391508 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\header.h
+
+1302960323 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302904300 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1302977009 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+
+1302976422 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\tree.cpp
+	"BSP.h"
+	<utility>
+	<bitset>
+	<vector>
+
+1303004006 source:c:\dokumente und einstellungen\christa kuolt\desktop\renderbender2 mit lightmaps geht bessere lightmaps\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303752942 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303741181 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+
+1302391508 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\header.h
+
+1303760791 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303581942 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303607744 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303741814 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\boundingbox.cpp
+	"BoundingBox.h"
+
+1303742189 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303746214 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1303742181 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1303761987 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303741889 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1303676938 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\speedup.cpp
+	"Bsp.h"
+
+1303515054 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303509724 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	"BoundingBox.h"
+
+1302391508 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\header.h
+
+1303517340 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\line.h
+	"Vector.h"
+
+1303494740 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303484172 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1303490402 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\boundingbox.cpp
+	"BoundingBox.h"
+
+1303518717 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1303506896 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303514347 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\speedup.cpp
+	"Bsp.h"
+
+1303500132 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1234032360 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302904300 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303518176 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1303507657 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1301170918 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\coordinatesystem.h
+	"Vector.h"
+
+1301170926 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1303559551 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303558728 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+
+1302391508 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\header.h
+
+1303517342 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\line.h
+	"Vector.h"
+
+1303494740 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303484172 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\coordinatesystem.h
+	"Vector.h"
+
+1303490402 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\boundingbox.cpp
+	"BoundingBox.h"
+
+1303520174 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1301170926 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303506898 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303559348 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\speedup.cpp
+	"Bsp.h"
+
+1303559270 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303500132 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1302904300 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303558763 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1301170918 c:\dokumente und einstellungen\computer1\desktop\renderbender 3\coordinatesystem.h
+	"Vector.h"
+
+1301170926 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1303759952 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3\wallcollision.cpp
+	"BSP.h"
+	<list>
+
+1303671060 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303674948 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+
+1302391508 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\header.h
+
+1303670417 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303607990 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\coordinatesystem.h
+	"Vector.h"
+
+1303672904 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1301170926 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303663566 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303676936 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\speedup.cpp
+	"Bsp.h"
+
+1303670098 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\wallcollision.cpp
+	"BSP.h"
+	<list>
+
+1303675320 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303581942 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303607744 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303674073 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 original\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1303671062 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303681192 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	"BoundingBox.h"
+
+1302391508 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\header.h
+
+1303670418 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303607990 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\coordinatesystem.h
+	"Vector.h"
+
+1303665424 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\boundingbox.cpp
+	"BoundingBox.h"
+
+1303672906 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1301170926 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303663568 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303676938 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\speedup.cpp
+	"Bsp.h"
+
+1303670100 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\wallcollision.cpp
+	"BSP.h"
+	<list>
+
+1303675322 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303581942 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303607744 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303679974 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 original\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1303835426 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\baum.cpp
+	"BSP.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303836210 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+
+1302391508 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\header.h
+
+1303823494 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\line.h
+	"Vector.h"
+
+1303569928 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303825585 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\coordinatesystem.h
+	"Vector.h"
+
+1303741816 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\boundingbox.cpp
+	"BoundingBox.h"
+
+1303742182 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1301170926 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303831223 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303676938 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\speedup.cpp
+	"Bsp.h"
+
+1303759954 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\wallcollision.cpp
+	"BSP.h"
+	<list>
+
+1303830049 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303581942 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303607744 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303823588 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1303821679 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\boundingvolume.cpp
+
+1303836100 source:d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\brush.cpp
+	"Brush.h"
+
+1303836047 d:\dokumente und einstellungen\bastian kuolt\desktop\renderbender 3 [in entwicklung]\brush.h
+	"BoundingBox.h"
+	"Plane.h"
+	"BSP.h"
+	<vector>
+
+1304016158 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\baum.cpp
+	"BSP.h"
+	"Brush.h"
+	<set>
+	<vector>
+	<bitset>
+
+1304013125 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\bsp.h
+	"Windows.h"
+	"GLEE.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+	"MD2.h"
+	"Sound.h"
+
+1303934362 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\header.h
+	"GLee.h"
+
+1303935035 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\boundingbox.h
+	"Windows.h"
+	"GLee.h"
+	"GLUT.h"
+	"Line.h"
+	"Plane.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303825586 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\coordinatesystem.h
+	"Vector.h"
+
+1303741816 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\boundingbox.cpp
+	"BoundingBox.h"
+
+1304020268 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\brush.cpp
+	"Brush.h"
+
+1304008309 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\brush.h
+	"Windows.h"
+	"GLee.h"
+	"BoundingBox.h"
+	"Plane.h"
+	"BSP.h"
+	<vector>
+
+1304020380 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\camera.cpp
+	"BoundingBox.h"
+	"BSP.h"
+	"GLUT.h"
+	<cctype>
+
+1303934578 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303860420 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303676938 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\speedup.cpp
+	"Bsp.h"
+
+1304016925 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303931425 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303915821 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1304016789 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\main.cpp
+	"Windows.h"
+	"GLee.h"
+	"BSP.h"
+	<GL/glut.h>
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+	"MD2.h"
+	"AL.h"
+	"ALUT.h"
+	"Sound.h"
+
+1303868525 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\baum.cpp
+	"BSP.h"
+	"Brush.h"
+	<set>
+	<vector>
+	<bitset>
+
+1303859363 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\bsp.h
+	"Windows.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	"BoundingBox.h"
+
+1302391508 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\header.h
+
+1303855941 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\boundingbox.h
+	"Line.h"
+	"Plane.h"
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303825586 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\coordinatesystem.h
+	"Vector.h"
+
+1303846204 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\brush.h
+	"BoundingBox.h"
+	"Plane.h"
+	"BSP.h"
+	<vector>
+
+1303741816 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\boundingbox.cpp
+	"BoundingBox.h"
+
+1303865875 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\brush.cpp
+	"Brush.h"
+
+1303867614 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\camera.cpp
+	"BoundingBox.h"
+	"GLUT.h"
+	<cctype>
+
+1301170926 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1234032360 c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303860419 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1303676938 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\speedup.cpp
+	"Bsp.h"
+
+1303868600 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1303581942 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\draw.cpp
+	"Windows.h"
+	"GLEe.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1234032360 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303607744 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1303868733 source:c:\dokumente und einstellungen\christa kuolt\desktop\neuer ordner\renderbender 3 [in entwicklung]\main.cpp
+	"Windows.h"
+	"GLee.h"
+	<GL/glut.h>
+	"BSP.h"
+	<string>
+	"GL/GL.h"
+	<stdlib.h>
+	<ctype.h>
+	"BoundingBox.h"
+
+1304006727 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\md2.h
+	"IL/ILUT.h"
+	<cmath>
+	<vector>
+	<fstream>
+	<algorithm>
+	"Sound.h"
+	"BSP.h"
+	"IDMD2.h"
+
+1303934233 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\idmd2.h
+	<fstream>
+
+1304000285 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung]\sound.h
+	"AL.h"
+	"ALUT.h"
+	<string>
+
+1304264298 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\baum.cpp
+	"BSP.h"
+	"Brush.h"
+	<set>
+	<vector>
+	<bitset>
+
+1304185065 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\bsp.h
+	"Windows.h"
+	"GLEE.h"
+	"Header.h"
+	<GL/GL.h>
+	<vector>
+	<ctime>
+	<cstdio>
+	<cstdint>
+	"BoundingBox.h"
+	"MD2.h"
+	"Skybox.h"
+	"Sound.h"
+
+1234032360 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1303934364 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\header.h
+	"GLee.h"
+
+1303935036 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\boundingbox.h
+	"Windows.h"
+	"GLee.h"
+	"GLUT.h"
+	"Line.h"
+	"Plane.h"
+	<cstdio>
+	<set>
+	"CoordinateSystem.h"
+
+1301429262 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\line.h
+	"Vector.h"
+
+1303569928 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\vector.h
+	"Windows.h"
+	<cmath>
+	<cstdlib>
+
+1303825586 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\plane.h
+	"Line.h"
+	<utility>
+	"Windows.h"
+	"GLUT.h"
+	<cstdio>
+
+1301170918 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\coordinatesystem.h
+	"Vector.h"
+
+1304181923 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\md2.h
+	"IL/ILUT.h"
+	<cmath>
+	<vector>
+	<fstream>
+	<algorithm>
+	"Sound.h"
+	"Config.h"
+	"BSP.h"
+	"IDMD2.h"
+
+1304190316 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\sound.h
+	"AL.h"
+	"ALUT.h"
+	"Config.h"
+	<string>
+
+1303934234 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\idmd2.h
+	<fstream>
+
+1304008310 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\brush.h
+	"Windows.h"
+	"GLee.h"
+	"BoundingBox.h"
+	"Plane.h"
+	"BSP.h"
+	<vector>
+
+1303741816 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\boundingbox.cpp
+	"BoundingBox.h"
+
+1304102271 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\brush.cpp
+	"Brush.h"
+
+1304265816 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\camera.cpp
+	"BoundingBox.h"
+	"BSP.h"
+	"GLUT.h"
+	<cctype>
+
+1303934580 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\coordinatesystem.cpp
+	"Windows.h"
+	"GLee.h"
+	<cstdio>
+	"GLUT.h"
+	"CoordinateSystem.h"
+	"CoordinateSystem.h"
+	<GL/GL.h>
+
+1303860420 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\frustum.cpp
+	"BoundingBox.h"
+	<GL/GL.h>
+	<algorithm>
+
+1304264648 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\speedup.cpp
+	"Bsp.h"
+
+1304189433 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\data.cpp
+	"Windows.h"
+	"Glee.h"
+	"BSP.h"
+	<string>
+	<cctype>
+	"Config.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+
+1304190681 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\draw.cpp
+	"Windows.h"
+	"GLEE.h"
+	"BSP.h"
+	<IL/IL.h>
+	<IL/ILUT.h>
+	"Config.h"
+
+1234032360 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1303915822 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\lightmap.cpp
+	"Windows.h"
+	"IL/ILU.h"
+	"GLEe.h"
+	"Bsp.h"
+	<cmath>
+	<algorithm>
+	"IL/IL.h"
+	"IL/ILU.h"
+	<cstring>
+	<cstdlib>
+
+1304265584 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\main.cpp
+	"Windows.h"
+	"GLee.h"
+	"BSP.h"
+	<GL/glut.h>
+	<string>
+	<stdlib.h>
+	<ctype.h>
+	"GL/GL.h"
+	"BoundingBox.h"
+	"MD2.h"
+	"AL.h"
+	"ALUT.h"
+	"Sound.h"
+	"Config.h"
+	"Wincon.h"
+
+1304264054 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\skybox.h
+	"IL/ILUT.h"
+	"Config.h"
+
+1304186568 source:c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\config.cpp
+	"Windows.h"
+	"GLEE.h"
+	"GLUT.h"
+	"Config.h"
+	<cstdio>
+	<string>
+
+1304186577 c:\dokumente und einstellungen\computer1\desktop\renderbender 3 [in entwicklung] mit sound\config.h
+	<string>
+
