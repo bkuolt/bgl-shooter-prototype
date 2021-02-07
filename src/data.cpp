@@ -8,7 +8,7 @@
 #include <IL/IL.h>
 #include <IL/ILUT.h>
 
-// Vorw‰rtsdeklarationen
+// Vorw√§rtsdeklarationen
 void AdaptCoordinateSystem(void);
 void DecompressPVS(void);
 void LoadLightmaps(void);
@@ -50,14 +50,13 @@ Skybox skybox;
 
 /*
 ==================================================
-L‰dt BSP
+L√§dt BSP
 ==================================================*/
-void LoadBSP(const char *filename)
-{
-    // (1) ÷ffnet Datei
-    printf("\nOeffnet %s...\n",GetConfigurationString(Level).c_str());
-    file = fopen(filename,"rb");
-    fread(&header,sizeof(dheader_t),1,file);
+void LoadBSP(const char *filename) {
+    // (1) √ñffnet Datei
+    printf("\nOeffnet %s...\n", GetConfigurationString(Level).c_str());
+    file = fopen(filename, "rb");
+    fread(&header, sizeof(dheader_t), 1, file);
 
     // Startet DevIL
     printf("\tInitialisiert DevIL...\n");
@@ -67,9 +66,9 @@ void LoadBSP(const char *filename)
     ilutRenderer(ILUT_OPENGL);
     ilEnable(IL_FILE_OVERWRITE);
     ilutEnable(ILUT_OPENGL_CONV);
-    iluImageParameter(ILU_FILTER,ILU_BILINEAR);
+    iluImageParameter(ILU_FILTER, ILU_BILINEAR);
 
-    // (2) L‰dt Lumps
+    // (2) L√§dt Lumps
     printf("\tLiest Lumps...\n");
     vertices     = LoadLumpArray<dvertex_t>(LUMP_VERTEXES);
     edges        = LoadLumpArray<dedge_t>  (LUMP_EDGES);
@@ -86,49 +85,48 @@ void LoadBSP(const char *filename)
     leaf_brushes = LoadLumpArray<unsigned short>(LUMP_LEAFBRUSHES);
     models       = LoadLumpArray<dmodel_t>(LUMP_MODELS);
 
-    // L‰d VIS
+    // L√§d VIS
     printf("\tLaedt PVS...\n");
     vis = (dvis_t*) new char[header.lumps[LUMP_VISIBILITY].filelen];
-    fseek(file,header.lumps[LUMP_VISIBILITY].fileofs,SEEK_SET);
-    fread(vis,header.lumps[LUMP_VISIBILITY].filelen,1,file);
+    fseek(file, header.lumps[LUMP_VISIBILITY].fileofs, SEEK_SET);
+    fread(vis, header.lumps[LUMP_VISIBILITY].filelen, 1, file);
 
     // Dekomprimiert Cluster (PVS)
     CD::CreateClusters(vis);
 
-    // (3) L‰dt Lightmaps
+    // (3) L√§dt Lightmaps
     printf("\tErstellt Lightmaps...\n");
     LoadLightmaps();
 
-    // (4) L‰dt Texturen
-    if(GetConfigurationInt(DrawTextures)){
+    // (4) L√§dt Texturen
+    if (GetConfigurationInt(DrawTextures)) {
         printf("\tLaedt Texturen...\n");
         LoadTextures();
     }
-    // L‰dt Skybox
+    // L√§dt Skybox
     if(GetConfigurationInt(DrawSkybox))
         skybox.load((GetConfigurationString(DataPath) + "sky.tga").c_str());
 
-    // (5) Koorinatensystem ‰ndern
+    // (5) Koorinatensystem √§ndern
     printf("\tAendert Koordinatensystem...\n");
     AdaptCoordinateSystem();
-
     // (6) Erstellt AABBs
     CreateAABBs();
 
-    // (6) Datei schlieﬂen
+    // (6) Datei schlie√üen
     fclose(file);
 
     // (4) zeigt Statistiken
     printf("\tStatistik:\n");
-    printf("\t\tPolygone : %i\n",faces.size());
-    printf("\t\tEckpunkte: %i\n",vertices.size());
-    printf("\t\tBrushes  : %i\n",brushes.size());
-    printf("\t\tEbenen   : %i\n",planes.size());
-    printf("\t\tTexturen : %i\n",textures.size());
-    printf("\t\tKnoten   : %i\n",nodes.size());
-    printf("\t\tBlaetter : %i\n",leafs.size());
-    printf("\t\tAABBs    : %i\n",leafs.size());
-    printf("\t\tClusters : %i\n",vis->numclusters);
+    printf("\t\tPolygone : %i\n", faces.size());
+    printf("\t\tEckpunkte: %i\n", vertices.size());
+    printf("\t\tBrushes  : %i\n", brushes.size());
+    printf("\t\tEbenen   : %i\n", planes.size());
+    printf("\t\tTexturen : %i\n", textures.size());
+    printf("\t\tKnoten   : %i\n", nodes.size());
+    printf("\t\tBlaetter : %i\n", leafs.size());
+    printf("\t\tAABBs    : %i\n", leafs.size());
+    printf("\t\tClusters : %i\n", vis->numclusters);
     printf("\n\tInitialisiert Fenster...\n");
 
     // (7) beendet Devil
@@ -139,84 +137,80 @@ void LoadBSP(const char *filename)
 ==================================================
 Liest Texturen
 ==================================================*/
-bool LoadTextures(void)
-{
+bool LoadTextures(void) {
     char name[200];
     size_t j;
 
     // Speicher reservieren
-    textures.resize(texinfos.size(),0);
+    textures.resize(texinfos.size(), 0);
 
-    if(!render_lightmap_only)
+    if (!render_lightmap_only) {
         // Texturen Laden
-        for(size_t i = 0;i < texinfos.size();++i)
-        {
+        for (size_t i = 0; i < texinfos.size(); ++i) {
             // Setzt Pfad
-            strcpy(name,GetConfigurationString(DataPath).c_str());
-            strcat(name,"textures/");
-            strcat(name,texinfos[i].texture);
-            strcat(name,GetConfigurationString(TextureFormat).c_str());
+            strcpy(name, GetConfigurationString(DataPath).c_str());
+            strcat(name, "textures/");
+            strcat(name, texinfos[i].texture);
+            strcat(name, GetConfigurationString(TextureFormat).c_str());
 
-            // ‹berpr¸fen,ob Datei schon geladen wurde
-            for(j = 0;j < i;++j)
-                if(std::string(texinfos[j].texture) == std::string(texinfos[i].texture))
+            // √úberpr√ºfen,ob Datei schon geladen wurde
+            for (j = 0; j < i; ++j) {
+                if (std::string(texinfos[j].texture) == std::string(texinfos[i].texture))
                     break;
+            }
 
-            if(j == i)
-            {
-                // L‰dt Textur
-                if((textures[i] = ilutGLLoadImage(name)) == 0)
+            if (j == i) {
+                // L√§dt Textur
+                if ((textures[i] = ilutGLLoadImage(name)) == 0)
                     exit(i);
 
                 iluGammaCorrect(GetConfigurationFloat(Gamma));
-                glBindTexture(GL_TEXTURE_2D,textures[i]);
+                glBindTexture(GL_TEXTURE_2D, textures[i]);
                 ilutGLBuildMipmaps();
-                glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE,GL_REPLACE);
-                glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
-                glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
-                glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,GL_REPEAT );
-                glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,GL_REPEAT );
-                glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT,GetConfigurationInt(AnisotropicFilter));
-                glBindTexture(GL_TEXTURE_2D,0);
-            }
-            else // verweist auf bereits geladene Textur
+                glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+                glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+                glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+                glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, GetConfigurationInt(AnisotropicFilter));
+                glBindTexture(GL_TEXTURE_2D, 0);
+            } else {  // verweist auf bereits geladene Textur
                 textures[i] = textures[j];
+            }
         }
+    }
 
     return true;
 }
 
 /*
 ==================================================
-L‰dt Lightmaps
+L√§dt Lightmaps
 ==================================================*/
-void LoadLightmaps(void)
-{
+void LoadLightmaps(void) {
     ILuint id;
+    lightmaps.resize(faces.size(), 0);
 
-    lightmaps.resize(faces.size(),0);
-
-    // L‰dt Lightmaps
-    for(size_t i = 1;i < faces.size();++i)
-    {
+    // L√§dt Lightmaps
+    for (size_t i = 1; i < faces.size(); ++i) {
         // Berechnet Lightmap
         ilBindImage(id = CreateLightmap(i));
 
-        // L‰dt Textur
+        // L√§dt Textur
         lightmaps[i] = ilutGLBindTexImage();
 
         iluGammaCorrect(GetConfigurationFloat(Gamma));
-        glBindTexture(GL_TEXTURE_2D,lightmaps[i]);
+        glBindTexture(GL_TEXTURE_2D, lightmaps[i]);
         ilutGLBuildMipmaps();
-        glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE,GL_MODULATE);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,GL_REPEAT );
-        glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,GL_REPEAT );
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT,GetConfigurationInt(AnisotropicFilter));
-        glBindTexture(GL_TEXTURE_2D,0);
+        glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, GetConfigurationInt(AnisotropicFilter));
+        glBindTexture(GL_TEXTURE_2D, 0);
 
-        // Lˆscht Devil Lightmap,da OpenGL sie hat
+        // L√∂scht Devil Lightmap,da OpenGL sie hat
         ilDeleteImage(id);
     }
 }
@@ -258,47 +252,45 @@ OpenGL
 
 */
 
-void SwapAxis(vec3_t v)
-{
+void SwapAxis(vec3_t v) {
     float temp = v[Y];
     v[Y] = v[Z];
     v[Z] = -temp;
 }
 
-void SwapAxis(short v[3])
-{
+void SwapAxis(short v[3]) {
     short temp = v[Y];
     v[Y] = v[Z];
     v[Z] = -temp;
 }
 
 
-void AdaptCoordinateSystem(void)
-{
+void AdaptCoordinateSystem(void) {
     size_t i;
 
     // Transformiert Vertices
-    for(i = 0;i < vertices.size();++i)
+    for (i = 0; i < vertices.size(); ++i) {
         SwapAxis(vertices[i].point);
+    }
 
     // Transformiert Texturachsen
-    for(i = 0;i < texinfos.size();++i){
+    for (i = 0; i < texinfos.size(); ++i) {
         SwapAxis(texinfos[i].vecs[0]);
         SwapAxis(texinfos[i].vecs[1]);
     }
 
     // Transformiert Ebenen
-    for(i = 0;i < planes.size();++i)
+    for (i = 0; i < planes.size(); ++i)
         SwapAxis(planes[i].normal);
 
     // Transformiert AABBs
-    for(i = 0;i < leafs.size();++i){
+    for (i = 0; i < leafs.size(); ++i) {
         SwapAxis(leafs[i].mins);
         SwapAxis(leafs[i].maxs);
     }
 
     // Transformiert AABBs der Modelle
-    for(i = 0;i < models.size();++i){
+    for (i = 0;i < models.size(); ++i) {
         SwapAxis(models[i].mins);
         SwapAxis(models[i].maxs);
     }

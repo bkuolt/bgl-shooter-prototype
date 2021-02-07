@@ -13,23 +13,21 @@ static Camera *current_camera = NULL;
 =================================================================================*/
 
 Camera::Camera(const Vector &position,const Vector &focus,const ViewingFrustum &frustum)
-      : position(position),focus(focus),frustum(frustum),angle(0.0f) // Angepasste Einstellungen
-
+    : position(position), focus(focus), frustum(frustum), angle(0.0f)  // Angepasste Einstellungen
 {
     current_camera = this;
     calculateBoundingSphere();
 }
 
 Camera::Camera(void)
-      : position(0.0f,0.0f,0.0f),focus(0.0f,0.0f,-1.0f),angle(0.0f) // OpenGL Standardeinstellungen
+    : position(0.0f,0.0f,0.0f), focus(0.0f,0.0f,-1.0f), angle(0.0f)  // OpenGL Standardeinstellungen
 {
     current_camera = this;
     calculateBoundingSphere();
 }
 
 Camera::Camera(const ViewingFrustum &frustum)
-      : position(0.0f,0.0f,0.0f),focus(0.0f,0.0f,-1.0f),frustum(frustum),angle(0.0f)
-{
+    : position(0.0f,0.0f,0.0f), focus(0.0f,0.0f,-1.0f), frustum(frustum), angle(0.0f) {
     current_camera = this;
     calculateBoundingSphere();
 }
@@ -38,17 +36,15 @@ Camera::Camera(const ViewingFrustum &frustum)
 =================================================================================
 Berechnet AABB der Kamera
 =================================================================================*/
-void Camera::calculateBoundingSphere(void)
-{
-     sphere = BoundingSphere(position,frustum.near);
+void Camera::calculateBoundingSphere(void) {
+     sphere = BoundingSphere(position, frustum.near);
 }
 
 /*
 =================================================================================
 Positioniert Kamera im 3D Raum
 =================================================================================*/
-void Camera::set(void) const
-{
+void Camera::set(void) const {
     Vector focus = getFocus();
 
 	// Setzt Sichtfeld (Projektion)
@@ -60,20 +56,18 @@ void Camera::set(void) const
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	gluLookAt(position[X],position[Y],position[Z], // Position
-			  position[X] + focus[X],position[Y] + focus[Y],position[Z] + focus[Z], // Fokus
-			  0.0f,1.0f,0.0f);
+	gluLookAt(position[X], position[Y], position[Z],                                  // Position
+			  position[X] + focus[X], position[Y] + focus[Y], position[Z] + focus[Z], // Fokus
+			  0.0f, 1.0f, 0.0f);
 }
 
 /*
 =================================================================================
 Verschiebt Kamera
 =================================================================================*/
-void Camera::translate(const Vector &v)
-{
-    // überprüft,ob Kollision bei Verschiebung auftretten würde
-    if(!CD::WouldHaveWallCollision(v))
-    {
+void Camera::translate(const Vector &v) {
+    // ÃœberprÃ¼ft,ob Kollision bei Verschiebung auftretten wwÃ¼rderde
+    if (!CD::WouldHaveWallCollision(v)) {
         position += v;
         sphere.translate(v);
         frustum.translate(v);
@@ -84,23 +78,21 @@ void Camera::translate(const Vector &v)
 =================================================================================
 Rotiert Kamera
 =================================================================================*/
-void Camera::rotate(Axis axis,float step)
-{
+void Camera::rotate(Axis axis,float step) {
     static float x = 0.0f;
 
-    if(axis == X){
-        // Überprüft,ob "Kopf" sich nicht mehr als 90° nach oben und unten bewegt
-        if(x + step < 90.0f && x + step > -90.0f) x+=step; else return;
+    if (axis == X) {
+        // ÃœberprÃ¼ft,ob "Kopf" sich nicht mehr als 90Â° nach oben und unten bewegt
+        if (x + step < 90.0f && x + step > -90.0f) x+=step; else return;
         focus.rotate(axis,step).normalize();
     }
-    else if(axis == Y)
+    else if (axis == Y)
         angle+= step;
 
     frustum.rotate(position,axis,step);
 }
 
-Vector Camera::getFocus(void) const
-{
+Vector Camera::getFocus(void) const {
     return Vector(focus).rotate(Y,angle).normalize();
 }
 
@@ -108,13 +100,11 @@ Vector Camera::getFocus(void) const
 =================================================================================
 Bewegt Kamera nach links bzw.nach rechts
 =================================================================================*/
-void Camera::moveLeft(float step)
-{
+void Camera::moveLeft(float step) {
     translate(CrossProduct(Vector(0.0f,1.0f,0.0f),getFocus()).normalize() * fabs(step));
 }
 
-void Camera::moveRight(float step)
-{
+void Camera::moveRight(float step) {
     translate(CrossProduct(Vector(0.0f,1.0f,0.0f),getFocus()).normalize() * -fabs(step));
 }
 
@@ -122,14 +112,12 @@ void Camera::moveRight(float step)
 =================================================================================
 Bewegt Kamera nach oben bzw. nach unten
 =================================================================================*/
-void Camera::moveUp(float step)
-{
-    translate(Vector(0.0f,fabs(step),0.0f));
+void Camera::moveUp(float step) {
+    translate(Vector(0.0f, fabs(step), 0.0f));
 }
 
-void Camera::moveDown(float step)
-{
-    translate(Vector(0.0f,-fabs(step),0.0f));
+void Camera::moveDown(float step) {
+    translate(Vector(0.0f, -fabs(step), 0.0f));
 }
 
 /*
@@ -137,13 +125,11 @@ void Camera::moveDown(float step)
 Bewegt Kamera nach vorne bzw. nach hinten. Die y-Kompenente der Verschiebung ist
 0,da sonst "Freelook"
 =================================================================================*/
-void Camera::moveForward(float step)
-{
+void Camera::moveForward(float step) {
     translate(Vector(getFocus()[X],0.0f,getFocus()[Z]).normalize() * fabs(step));
 }
 
-void Camera::moveBackward(float step)
-{
+void Camera::moveBackward(float step) {
     translate(Vector(getFocus()[X],0.0f,getFocus()[Z]).normalize() * -fabs(step));
 }
 
@@ -151,43 +137,37 @@ void Camera::moveBackward(float step)
 =================================================================================
 Rotiert Kamera nach oben bzw. nach unten
 =================================================================================*/
-void Camera::rotateUp(float step)
-{
-    rotate(X,fabs(step));
+void Camera::rotateUp(float step) {
+    rotate(X, fabs(step));
 }
 
-void Camera::rotateDown(float step)
-{
-    rotate(X,-fabs(step));
+void Camera::rotateDown(float step) {
+    rotate(X, -fabs(step));
 }
 
 /*
 =================================================================================
 Rotiert Kamera nach links bzw. nach rechts
 =================================================================================*/
-void Camera::rotateLeft(float step)
-{
-    rotate(Y,fabs(step));
+void Camera::rotateLeft(float step) {
+    rotate(Y, fabs(step));
 }
 
-void Camera::rotateRight(float step)
-{
-    rotate(Y,-fabs(step));
+void Camera::rotateRight(float step) {
+    rotate(Y, -fabs(step));
 }
 
 /*
 =================================================================================
-Gibt Kameraposition zurück
+Gibt Kameraposition zurï¿½ck
 =================================================================================*/
-const Vector& Camera::getPosition(void) const
-{
-    return position; // Könnte Probleme bei der AABB Kollisionserkennung geben!
+const Vector& Camera::getPosition(void) const {
+    return position;  // Kï¿½nnte Probleme bei der AABB Kollisionserkennung geben!
 }
 
-Vector Camera::getVisiblePosition(void) const
-{
-    //Vector offset(0,-2.5,0); // Offset sorgt dafür,dass es zu keinen Clippingfehlern mit dem Bodem kommt
-    return position + Vector(focus).normalize() * frustum.near; // Könnte Probleme bei der AABB Kollisionserkennung geben!
+Vector Camera::getVisiblePosition(void) const {
+    //Vector offset(0,-2.5,0); // Offset sorgt dafï¿½r,dass es zu keinen Clippingfehlern mit dem Bodem kommt
+    return position + Vector(focus).normalize() * frustum.near; // Kï¿½nnte Probleme bei der AABB Kollisionserkennung geben!
 }
 
 #ifdef __DEBUG__
@@ -197,13 +177,13 @@ Vector Camera::getVisiblePosition(void) const
 *                           FPS Camera Control                                  *
 *                                                                               *
 *********************************************************************************
-* HINWEIS: Für Testzwecke wird die Tastatur-Kamerasteurung hier implementiert!  *
+* HINWEIS: Fï¿½r Testzwecke wird die Tastatur-Kamerasteurung hier implementiert!  *
 *********************************************************************************/
-// Vorwärtsdeklarartionen
+// Vorwï¿½rtsdeklarartionen
 static void CameraCallback(int key);
 
 // Tastendefinitionen
-enum{
+enum {
     K = 'K',
     F = 'F',
 	W = 'W',
@@ -227,8 +207,7 @@ static const float rotation_step = 5.0f;
 =================================================================================
 Konvertiert GLUT Keycodes und reicht sie an den eigentlichen Callback
 =================================================================================*/
-void GLUTCameraCallback(int key,bool ascii)
-{
+void GLUTCameraCallback(int key,bool ascii) {
 	CameraCallback((ascii) ? toupper(key) : key + 256);
 }
 
@@ -236,12 +215,10 @@ void GLUTCameraCallback(int key,bool ascii)
 =================================================================================
 =                   Eigentliche Tastatur-Kamerasteuerung                        =
 =================================================================================*/
-static void CameraCallback(int key)
-{
+static void CameraCallback(int key) {
     float step = move_step;
 
-	switch(key)
-	{
+	switch(key) {
 	    // Beendet Programm
 	    case Esc: exit(0); break;
 
@@ -271,26 +248,25 @@ static void CameraCallback(int key)
 =================================================================================
 =                     Eigentliche Maus-Kamerasteuerung                          =
 =================================================================================*/
-void CameraCallback(int x,int y)
-{
+void CameraCallback(int x,int y) {
     static Vector last;
 	static const float step =  rotation_step;
 
     // Rotiert Kamera nach links und rechts
-    if(x - last[X] < 0)      camera.rotateLeft(step);
-    else if(x - last[X] > 0) camera.rotateRight(step);
+    if (x - last[X] < 0)      camera.rotateLeft(step);
+    else if (x - last[X] > 0) camera.rotateRight(step);
 
     // Rotiert Kamera nach oben und unten
-    if(y - last[Y] < 0)      camera.rotateUp(step);
-    else if(y - last[Y] > 0) camera.rotateDown(step);
+    if (y - last[Y] < 0)      camera.rotateUp(step);
+    else if (y - last[Y] > 0) camera.rotateDown(step);
 
     // Speichert letzte Koordinaten
     last[X] = x;
     last[Y] = y;
 
     // Zentriert Masuzeiger
-    if(x > glutGet(GLUT_WINDOW_WIDTH)  * 0.75f || x < glutGet(GLUT_WINDOW_WIDTH)  * 0.25f ||
-       y > glutGet(GLUT_WINDOW_HEIGHT) * 0.75f || y < glutGet(GLUT_WINDOW_HEIGHT) * 0.25f)
+    if (x > glutGet(GLUT_WINDOW_WIDTH)  * 0.75f || x < glutGet(GLUT_WINDOW_WIDTH)  * 0.25f ||
+        y > glutGet(GLUT_WINDOW_HEIGHT) * 0.75f || y < glutGet(GLUT_WINDOW_HEIGHT) * 0.25f)
        SetCursorPos(glutGet(GLUT_WINDOW_WIDTH)  / 2,glutGet(GLUT_WINDOW_HEIGHT) / 2);
 
     glutPostRedisplay();
@@ -307,12 +283,11 @@ void CameraCallback(int x,int y)
     #define GLUT_WHEEL_DOWN 4
 #endif
 
-void CameraCallback(int button,int state,int x,int y)
-{
+void CameraCallback(int button,int state,int x,int y) {
     // Verarbeitet Mausrad Kamra hoch/runter
-    if(button == GLUT_WHEEL_DOWN)
+    if (button == GLUT_WHEEL_DOWN)
         camera.moveDown(move_step * 2);
-    else if(button == GLUT_WHEEL_UP)
+    else if (button == GLUT_WHEEL_UP)
         camera.moveUp(move_step * 2);
 
 
@@ -326,5 +301,3 @@ void CameraCallback(int button,int state,int x,int y)
     CameraCallback(x,y);
 }
 #endif
-
-
