@@ -1,5 +1,5 @@
 ![Screenshot](screenshot.png)
-
+⚠️ Please note that is some very old and bad code ⚠️
 # Features
 - multi texturing
 - light maps
