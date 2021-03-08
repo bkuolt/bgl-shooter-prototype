@@ -1,5 +1,6 @@
 ![Screenshot](screenshot.png)
-⚠️ Please note that is some very old and bad code ⚠️
+⚠️ This is very old and bad code from my school days. ⚠️
+
 # Features
 - multi texturing
 - light maps
@@ -13,9 +14,9 @@
 |   |   |
 |---|---|
 ESC   | exit
-WASD  | move around
+WASD  | move around 
 
-##Mouse
+## Mouse
 |   |   |
 |---|---|
 left/right     | rotate left/right
