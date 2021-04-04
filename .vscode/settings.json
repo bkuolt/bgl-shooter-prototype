@@ -54,6 +54,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "bit": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "*.inc": "cpp",
+        "*.gen": "cpp"
     }
 }

@@ -1,6 +1,4 @@
 #ifndef SPEEDUP_H_INCLUDED
 #define SPEEDUP_H_INCLUDED
 
-
-
 #endif // SPEEDUP_H_INCLUDED
