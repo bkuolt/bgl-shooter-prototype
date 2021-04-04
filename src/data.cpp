@@ -48,10 +48,9 @@ bool render_lightmap_only = false;
 Skybox skybox;
 
 
-/*
-==================================================
-Lädt BSP
-==================================================*/
+/**
+ * @brief Lädt BSP Datei
+ */
 void LoadBSP(const char *filename) {
     // (1) Öffnet Datei
     printf("\nOeffnet %s...\n", GetConfigurationString(Level).c_str());
@@ -133,10 +132,9 @@ void LoadBSP(const char *filename) {
     ilShutDown();
 }
 
-/*
-==================================================
-Liest Texturen
-==================================================*/
+/**
+ * @brief Lädt Texturen
+ */
 bool LoadTextures(void) {
     char name[200];
     size_t j;
@@ -183,10 +181,9 @@ bool LoadTextures(void) {
     return true;
 }
 
-/*
-==================================================
-Lädt Lightmaps
-==================================================*/
+/**
+ * @brief Lädt Lightmaps
+ */
 void LoadLightmaps(void) {
     ILuint id;
     lightmaps.resize(faces.size(), 0);
@@ -263,7 +260,6 @@ void SwapAxis(short v[3]) {
     v[Y] = v[Z];
     v[Z] = -temp;
 }
-
 
 void AdaptCoordinateSystem(void) {
     size_t i;
