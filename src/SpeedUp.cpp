@@ -8,7 +8,7 @@ std::vector<std::vector<int32_t> > cluster_leafs;
 
 /*
 ==================================================================
-Erstellt AABBs sowie Displaylists für Blätter
+Erstellt AABBs sowie Displaylists fï¿½r Blï¿½tter
 ==================================================================*/
 void CreateAABBs(void)
 {
@@ -25,7 +25,7 @@ void CreateAABBs(void)
     // erstellt DisplayListen
     lists = glGenLists(faces.size() + models.size());
 
-    // füllt Listen
+    // fï¿½llt Listen
     printf("\tErstellt Displaylisten  \n"); //TODO
     for(size_t i = 0;i < leafs.size();++i)
     {
@@ -36,7 +36,7 @@ void CreateAABBs(void)
     }
 
     ////////////////////////////////////////////////////
-    // Genau das gleiche Prozeder für Modelle
+    // Genau das gleiche Prozeder fï¿½r Modelle
     int offset = leafs.size();
 
     for(size_t i = 1;i < models.size();++i)
@@ -53,7 +53,7 @@ void CreateAABBs(void)
     }
     ////////////////////////////////////////////////////
 
-    // speichert alle Blätter eines Clusters
+    // speichert alle Blï¿½tter eines Clusters
     cluster_leafs.resize(vis->numclusters);
 
     for(int32_t i = 0;i < leafs.size();++i)
@@ -90,11 +90,11 @@ void RenderVisibleModels(void)
 
 /*
 ==================================================================
-Rendert alle Polygone der Blätter,die zu diesem Cluster gehören
+Rendert alle Polygone der Blï¿½tter,die zu diesem Cluster gehï¿½ren
 ==================================================================*/
 void RenderCluster(int32_t c)
 {
-    // Zeichnet nur Blätter,die im Frustum sind!
+    // Zeichnet nur Blï¿½tter,die im Frustum sind!
     for(size_t i = 0;i < cluster_leafs[c].size();++i)
         if(camera.frustum.isWithin(aabbs[cluster_leafs[c][i]]))
             glCallList(lists + cluster_leafs[c][i]);

@@ -1,14 +1,14 @@
 
 
-namespace Key{
+namespace Key {
 
 typedef int Key;
 
-// Tastendefinitionen für das OpenGL Utility Toolkit und SDL
-enum{
-	#ifdef GL_UTITLITY_TOOLKIT
+// Tastendefinitionen fï¿½r das OpenGL Utility Toolkit und SDL
+enum {
+#ifdef GL_UTITLITY_TOOLKIT
 	W = 'W',
-	A = 'A', 
+	A = 'A',
 	S = 'S',
 	D = 'D',
 	Plus  = '+',
@@ -17,13 +17,12 @@ enum{
 	Down  = GLUT_KEY_DOWN,
 	Left  = GLUT_KEY_LEFT,
 	Right = GLUT_KEY_RIGHT
-	#endif
+#endif  // GL_UTITLITY_TOOLKIT
 };
 
 // Hilfsfunktions
 #ifdef GL_UTITLITY_TOOLKIT
-Key ConvertGLUTKey(int key)
-{
+Key ConvertGLUTKey(int key) {
 	if(key <= 255)
 		return toupper(key);
 	else
@@ -31,5 +30,4 @@ Key ConvertGLUTKey(int key)
 }
 #endif
 
-}
-
+}  // namespace Key
