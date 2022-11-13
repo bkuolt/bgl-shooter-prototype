@@ -3,14 +3,14 @@
 #ifdef __DEBUG__
 /*
 *********************************************************************************
-* HINWEIS: Für Testzwecke werden alle AABBs in dieser Liste gespeichert!        *
+* HINWEIS: Für Testzwecke werden alle AABBs in dieser Liste gespeichert! *
 *********************************************************************************/
-std::set<AABB*> list;
+std::set<AABB *> list;
 #endif
 
 /*
 =================================================================================
-=                        Axis Aligned Bounding Box                              =
+=                        Axis Aligned Bounding Box =
 =================================================================================*/
 /*
   F-------G
@@ -26,18 +26,18 @@ A-------D
  * @brief Berechnet aus den Punkten A und G die AABB
  */
 AABB::AABB(const Vector &min, const Vector &max) {
-	calculateVertices(min, max);
-	calculatePlanes();
-	translate(min - vertices[A]);  // Positioniert AABB
+  calculateVertices(min, max);
+  calculatePlanes();
+  translate(min - vertices[A]); // Positioniert AABB
 }
 
 /**
  * @brief Berechnet aus den Ma�en und dem Mittelpunkt die AABB
  */
 AABB::AABB(float width, float height, float depth, const Vector &center) {
-	calculateVertices(center + Vector(-width / 2, -height / 2, -depth / 2),
-					  center + Vector(width / 2, height / 2, depth / 2));
-	calculatePlanes();
+  calculateVertices(center + Vector(-width / 2, -height / 2, -depth / 2),
+                    center + Vector(width / 2, height / 2, depth / 2));
+  calculatePlanes();
 }
 
 #ifdef __DEBUG__
@@ -45,297 +45,280 @@ AABB::AABB(float width, float height, float depth, const Vector &center) {
  * @brief Berechnet aus den angegebenen Eckpunkten die umschlie�ende AABB
  */
 AABB::AABB(const float *vertices, size_t count) {
-	Vector min,max;
+  Vector min, max;
 
-	for (size_t i = 0; i < count; ++i)
-		for (size_t c = 0; c < 3; ++c)
-			if (vertices[(i * 3) + c] > max[c])
-				max[c] = vertices[(i * 3) + c];
-			else if (vertices[(i * 3) + c] < min[c])
-				min[c] = vertices[(i * 3) + c];
+  for (size_t i = 0; i < count; ++i)
+    for (size_t c = 0; c < 3; ++c)
+      if (vertices[(i * 3) + c] > max[c])
+        max[c] = vertices[(i * 3) + c];
+      else if (vertices[(i * 3) + c] < min[c])
+        min[c] = vertices[(i * 3) + c];
 
-	calculateVertices(min, max);
-	calculatePlanes();
+  calculateVertices(min, max);
+  calculatePlanes();
 }
 #endif
 
 #ifdef __DEBUG__
 /**
  * @brief Verwaltet AABB in einer Liste
- * 
+ *
  */
-void AABB::manage(void) {
-    list.insert(this);
-}
+void AABB::manage(void) { list.insert(this); }
 
-AABB::~AABB(void) {
-    list.erase(this);
-}
+AABB::~AABB(void) { list.erase(this); }
 #endif
 
 /**
  * @brief Berechnet Eckpunkte
  */
 void AABB::calculateVertices(const Vector &min, const Vector &max) {
-    Vector center = getCenter();
-	float width  = fabs(max[X] - min[X]);
-	float height = fabs(max[Y] - min[Y]);
-	float depth  = fabs(max[Z] - min[Z]);
+  Vector center = getCenter();
+  float width = fabs(max[X] - min[X]);
+  float height = fabs(max[Y] - min[Y]);
+  float depth = fabs(max[Z] - min[Z]);
 
-	vertices[A] = center + Vector(-width / 2, -height / 2, depth / 2);
-	vertices[B] = center + Vector(-width / 2, height / 2, depth / 2);
-	vertices[C] = center + Vector(width / 2, height / 2, depth / 2);
-	vertices[D] = center + Vector(width / 2, -height / 2, depth / 2);
-	vertices[E] = center + Vector(-width / 2, -height / 2, -depth / 2);
-	vertices[F] = center + Vector(-width / 2, height / 2, -depth / 2);
-	vertices[G] = center + Vector(width / 2, height / 2, -depth / 2);
-	vertices[H] = center + Vector(width / 2, -height / 2, -depth / 2);
+  vertices[A] = center + Vector(-width / 2, -height / 2, depth / 2);
+  vertices[B] = center + Vector(-width / 2, height / 2, depth / 2);
+  vertices[C] = center + Vector(width / 2, height / 2, depth / 2);
+  vertices[D] = center + Vector(width / 2, -height / 2, depth / 2);
+  vertices[E] = center + Vector(-width / 2, -height / 2, -depth / 2);
+  vertices[F] = center + Vector(-width / 2, height / 2, -depth / 2);
+  vertices[G] = center + Vector(width / 2, height / 2, -depth / 2);
+  vertices[H] = center + Vector(width / 2, -height / 2, -depth / 2);
 }
 
 /**
  * @brief Berechnet Ebenenen
  */
 void AABB::calculatePlanes(void) {
-	planes[0] = Plane(vertices[A], vertices[D], vertices[B]);  // Vorderseite
-	planes[1] = Plane(vertices[E], vertices[F], vertices[H]);  // Rückseite
-	planes[2] = Plane(vertices[A], vertices[B], vertices[E]);  // linke Seite
-	planes[3] = Plane(vertices[D], vertices[H], vertices[C]);  // rechte Seite
-	planes[4] = Plane(vertices[B], vertices[C], vertices[F]);  // Oberseite
-	planes[5] = Plane(vertices[A], vertices[E], vertices[D]);  // Unterseite
+  planes[0] = Plane(vertices[A], vertices[D], vertices[B]); // Vorderseite
+  planes[1] = Plane(vertices[E], vertices[F], vertices[H]); // Rückseite
+  planes[2] = Plane(vertices[A], vertices[B], vertices[E]); // linke Seite
+  planes[3] = Plane(vertices[D], vertices[H], vertices[C]); // rechte Seite
+  planes[4] = Plane(vertices[B], vertices[C], vertices[F]); // Oberseite
+  planes[5] = Plane(vertices[A], vertices[E], vertices[D]); // Unterseite
 }
 
 /**
  * @brief Überprüft,ob die AABB vom angegebenem Strahl getroffen wird
  */
 bool AABB::intersects(const Ray &ray) const {
-	Vector intersection;
-	Vector min = vertices[A];
-	Vector max = vertices[G];
-	std::pair<float, float> parameters;
+  Vector intersection;
+  Vector min = vertices[A];
+  Vector max = vertices[G];
+  std::pair<float, float> parameters;
 
-	for (size_t i = 0; i < 6; ++i)
-		if (planes[i].intersects(ray)) {
-			// (1) berechnet Schnittpunkt mit der Ebene und die Parametes für den Schnittpunkt
-			intersection = planes[i].getIntersection(ray);
-            parameters = planes[i].getParameters(intersection);
+  for (size_t i = 0; i < 6; ++i)
+    if (planes[i].intersects(ray)) {
+      // (1) berechnet Schnittpunkt mit der Ebene und die Parametes für den
+      // Schnittpunkt
+      intersection = planes[i].getIntersection(ray);
+      parameters = planes[i].getParameters(intersection);
 
-            // (2) Überprüft, ob die Reichweite des Strahls ausreicht
-        	if (ray.contains(intersection))
-                // (3) Überprüft, ob Schnittpunkt auf einer der Seitenflächen liegt
-				if ((parameters.first  > 0.0f && parameters.first  < 1.0f) &&
-                    (parameters.second > 0.0f && parameters.second < 1.0f))
-				   return true;
-		}
-	return false;
+      // (2) Überprüft, ob die Reichweite des Strahls ausreicht
+      if (ray.contains(intersection))
+        // (3) Überprüft, ob Schnittpunkt auf einer der Seitenflächen liegt
+        if ((parameters.first > 0.0f && parameters.first < 1.0f) &&
+            (parameters.second > 0.0f && parameters.second < 1.0f))
+          return true;
+    }
+  return false;
 }
-
 
 /**
  * @brief �berpr�ft,ob die AABB mit der angegebenen AABB kollidiert
  */
 bool AABB::intersects(const AABB &rhs) const {
-    Vector distance = getCenter() - rhs.getCenter();  // Abstand der Mittelpunkte
+  Vector distance = getCenter() - rhs.getCenter(); // Abstand der Mittelpunkte
 
-    if (fabs(distance[X]) > fabs(getWidth()  + rhs.getWidth()))  return false;
-    if (fabs(distance[Y]) > fabs(getHeight() + rhs.getHeight())) return false;
-    if (fabs(distance[Z]) > fabs(getDepth()  + rhs.getDepth()))  return false;
-    return true;
+  if (fabs(distance[X]) > fabs(getWidth() + rhs.getWidth()))
+    return false;
+  if (fabs(distance[Y]) > fabs(getHeight() + rhs.getHeight()))
+    return false;
+  if (fabs(distance[Z]) > fabs(getDepth() + rhs.getDepth()))
+    return false;
+  return true;
 }
 
 /**
  * @brief �berpr�ft,ob Punkt in der AABB liegt
  */
 bool AABB::isWithin(const Vector &v) const {
-    return (vertices[A][X] < v[X] && vertices[D][X] > v[X]) &&
-           (vertices[A][Y] < v[Y] && vertices[B][Y] > v[Y]) &&
-           (vertices[A][Z] > v[Z] && vertices[E][Z] < v[Z]);
+  return (vertices[A][X] < v[X] && vertices[D][X] > v[X]) &&
+         (vertices[A][Y] < v[Y] && vertices[B][Y] > v[Y]) &&
+         (vertices[A][Z] > v[Z] && vertices[E][Z] < v[Z]);
 }
 
 /**
  * @brief Verschiebt die AABB
  */
-AABB& AABB::translate(const Vector &v) {
-	for (size_t i = 0; i < 8; ++i)
-		vertices[i] += v;
-    for (size_t i = 0; i < 6; ++i)
-		planes[i].translate(v);
-	return *this;
+AABB &AABB::translate(const Vector &v) {
+  for (size_t i = 0; i < 8; ++i)
+    vertices[i] += v;
+  for (size_t i = 0; i < 6; ++i)
+    planes[i].translate(v);
+  return *this;
 }
 
 /**
  * @brief Berechnet Mittelpunkt der AABB
  */
 Vector AABB::getCenter(void) const {
-	return vertices[A] + (vertices[G] - vertices[A]) * 0.5f;
+  return vertices[A] + (vertices[G] - vertices[A]) * 0.5f;
 }
 
 /**
  * @brief Positioniert AABB mit dem Mittelpunkt an angegebener Position
  */
-void AABB::position(const Vector &v) {
-    translate(v - getCenter());
-}
+void AABB::position(const Vector &v) { translate(v - getCenter()); }
 
 /**
- * @brief Berechnet die Maße der AABB 
+ * @brief Berechnet die Maße der AABB
  */
 float AABB::getWidth(void) const {
-	return fabs(vertices[D][X] - vertices[A][X]);
+  return fabs(vertices[D][X] - vertices[A][X]);
 }
 
 float AABB::getHeight(void) const {
-	return fabs(vertices[B][Y] - vertices[A][Y]);
+  return fabs(vertices[B][Y] - vertices[A][Y]);
 }
 
 float AABB::getDepth(void) const {
-    return fabs(vertices[E][Z] - vertices[A][Z]);
+  return fabs(vertices[E][Z] - vertices[A][Z]);
 }
 
 /**
  * @brief Gibt Ebenen der Seitenfl�chen zur�ck
  */
-const Plane & AABB::getPlane(size_t i) const {
-    return planes[i];
-}
+const Plane &AABB::getPlane(size_t i) const { return planes[i]; }
 
 #ifdef __DEBUG__
 void AABB::draw(void) const {
-    static const GLubyte indices[] = {
-        0, 1, 2, 3,
-        0, 3, 4, 5,
-        0, 5, 6, 1,
-        1, 6, 7, 2,
-        7, 4, 3, 2,
-        4, 7, 6, 5 };
+  static const GLubyte indices[] = {0, 1, 2, 3, 0, 3, 4, 5, 0, 5, 6, 1,
+                                    1, 6, 7, 2, 7, 4, 3, 2, 4, 7, 6, 5};
 
-    GLfloat points[24] = {
-        vertices[C][X], vertices[C][Y], vertices[C][Z],
-        vertices[B][X], vertices[B][Y], vertices[B][Z],
-        vertices[A][X], vertices[A][Y], vertices[A][Z],
-        vertices[D][X], vertices[D][Y], vertices[D][Z],
-        vertices[H][X], vertices[H][Y], vertices[H][Z],
-        vertices[G][X], vertices[G][Y], vertices[G][Z],
-        vertices[F][X], vertices[F][Y], vertices[F][Z],
-        vertices[E][X], vertices[E][Y], vertices[E][Z]};
+  GLfloat points[24] = {
+      vertices[C][X], vertices[C][Y], vertices[C][Z], vertices[B][X],
+      vertices[B][Y], vertices[B][Z], vertices[A][X], vertices[A][Y],
+      vertices[A][Z], vertices[D][X], vertices[D][Y], vertices[D][Z],
+      vertices[H][X], vertices[H][Y], vertices[H][Z], vertices[G][X],
+      vertices[G][Y], vertices[G][Z], vertices[F][X], vertices[F][Y],
+      vertices[F][Z], vertices[E][X], vertices[E][Y], vertices[E][Z]};
 
-    glPushAttrib(GL_CURRENT_BIT | GL_POLYGON_BIT);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-        glColor3f(1.0f, 0.0f, 0.0f);
+  glPushAttrib(GL_CURRENT_BIT | GL_POLYGON_BIT);
+  glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+  glColor3f(1.0f, 0.0f, 0.0f);
 
-        glVertexPointer(3, GL_FLOAT, 0, points);
-        glEnableClientState(GL_VERTEX_ARRAY);
-        glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indices);
-        glDisableClientState(GL_VERTEX_ARRAY);
-    glPopAttrib();
+  glVertexPointer(3, GL_FLOAT, 0, points);
+  glEnableClientState(GL_VERTEX_ARRAY);
+  glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indices);
+  glDisableClientState(GL_VERTEX_ARRAY);
+  glPopAttrib();
 }
 #endif
 
 /*
 =================================================================================
-=                          Oriented Bounding Box                                =
+=                          Oriented Bounding Box =
 =================================================================================*/
 
 /**
- * @brief Konstruiert OBB aus AABB (ist explizit nötig, da AABB kein Standardkonstruktor hat)
+ * @brief Konstruiert OBB aus AABB (ist explizit nötig, da AABB kein
+ * Standardkonstruktor hat)
  */
-OBB::OBB(const AABB &aabb) : AABB(aabb)
-{}
+OBB::OBB(const AABB &aabb) : AABB(aabb) {}
 
 /**
  * @brief Überprüft,ob sich der angegebene Punkt in der OBB befindet
  */
 bool OBB::isWithin(const Vector &P) const {
-	for (size_t i = 0; i < 6; ++i)
-		if (planes[i].distance(P) > 0.0f)
-			return false;
-	return true;
+  for (size_t i = 0; i < 6; ++i)
+    if (planes[i].distance(P) > 0.0f)
+      return false;
+  return true;
 }
 
 /**
  * @brief Überprüft,ob diese OBB und die angegeben AABB/OBB kollidieren
  */
 bool OBB::intersects(const AABB &rhs) const {
-	for (size_t i = 0; i < 8; ++i)
-		if (isWithin(rhs.vertices[i]) || rhs.isWithin(vertices[i]))
-			return true;
-	return false;
+  for (size_t i = 0; i < 8; ++i)
+    if (isWithin(rhs.vertices[i]) || rhs.isWithin(vertices[i]))
+      return true;
+  return false;
 }
 
 /**
  * @brief Rotiert die OBB
  */
-OBB& OBB::rotate(Axis axis, float angle) {
-    Vector center = getCenter();
+OBB &OBB::rotate(Axis axis, float angle) {
+  Vector center = getCenter();
 
-    // Eckpunkte rotieren
-	for (size_t i = 0; i < 8; ++i) {
-		vertices[i]-= center;
-		vertices[i].rotate(axis, angle);
-		vertices[i]+= center;
-	}
-    // Ebenen neu berechnen
-	calculatePlanes();
-	return *this;
+  // Eckpunkte rotieren
+  for (size_t i = 0; i < 8; ++i) {
+    vertices[i] -= center;
+    vertices[i].rotate(axis, angle);
+    vertices[i] += center;
+  }
+  // Ebenen neu berechnen
+  calculatePlanes();
+  return *this;
 }
 
 /*
 =================================================================================
-=                                Bounding Sphere                                =
+=                                Bounding Sphere =
 =================================================================================*/
 
 /**
  * @brief Überprüft,ob Kugel sich AABB und Kugel schneiden
  */
 bool AABB::intersects(const BoundingSphere &sphere) const {
-	for (size_t i = 0; i < 6; ++i)
-		if(planes[i].distance(sphere.getCenter()) < sphere.getRadius())
-			return true;
-	return false;
+  for (size_t i = 0; i < 6; ++i)
+    if (planes[i].distance(sphere.getCenter()) < sphere.getRadius())
+      return true;
+  return false;
 }
 
 /**
- * @brief Konstruiert aus Mittelpunkt und Radius ein Bounding Sphere 
+ * @brief Konstruiert aus Mittelpunkt und Radius ein Bounding Sphere
  */
 BoundingSphere::BoundingSphere(const Vector &center, float radius)
-	: center(center), radius(radius)
-{}
+    : center(center), radius(radius) {}
 
 /**
  * @brief Überprüft, ob Kugel sich zwei Kugeln schneiden
  */
 bool BoundingSphere::intersects(const BoundingSphere &rhs) const {
-	return (center - rhs.center).length() < radius + rhs.radius;
+  return (center - rhs.center).length() < radius + rhs.radius;
 }
 
 /**
  * @brief Verschiebt Kugel
  */
-BoundingSphere& BoundingSphere::translate(const Vector &v) {
-	center += v;
-	return *this;
+BoundingSphere &BoundingSphere::translate(const Vector &v) {
+  center += v;
+  return *this;
 }
 
 /**
  * @brief Gibt Mittelpunkt bzw. Radius der Kugel zur�ck
  */
-float BoundingSphere::getRadius(void) const {
-	return radius;
-}
+float BoundingSphere::getRadius(void) const { return radius; }
 
-const Vector& BoundingSphere::getCenter(void) const {
-	return center;
-}
+const Vector &BoundingSphere::getCenter(void) const { return center; }
 
 #ifdef __DEBUG__
 void BoundingSphere::draw(void) const {
-    glPushAttrib(GL_CURRENT_BIT);
-    glPushMatrix();
-        glTranslatef(center[X], center[Y], center[Z]);
-        glScalef(radius, radius, radius);
-        glColor3f(0.0f, 0.0f, 1.0f);
-        glutWireSphere(1, 50, 50);
-    glPopMatrix();
-    glPopAttrib();
+  glPushAttrib(GL_CURRENT_BIT);
+  glPushMatrix();
+  glTranslatef(center[X], center[Y], center[Z]);
+  glScalef(radius, radius, radius);
+  glColor3f(0.0f, 0.0f, 1.0f);
+  glutWireSphere(1, 50, 50);
+  glPopMatrix();
+  glPopAttrib();
 }
 #endif
 
@@ -343,5 +326,7 @@ void BoundingSphere::draw(void) const {
 =================================================================================
 Erstellt das am engsten umgebende Bounding Volume
 =================================================================================*/
-OrientedBoundingVolume* CreateBoundingVolume(float width, float height, float depth, float radius);
-OrientedBoundingVolume* CreateBoundingVolume(const float* vertices, size_t count);
+OrientedBoundingVolume *CreateBoundingVolume(float width, float height,
+                                             float depth, float radius);
+OrientedBoundingVolume *CreateBoundingVolume(const float *vertices,
+                                             size_t count);
