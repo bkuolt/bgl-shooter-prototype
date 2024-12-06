@@ -22,6 +22,8 @@
 =                                                            =
 ==============================================================*/
 #define __DEBUG__
+class Weapon;
+class SkyBOx;
 
 extern Weapon weapon;
 extern Skybox skybox;

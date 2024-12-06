@@ -79,7 +79,7 @@ void Camera::translate(const Vector &v) {
 /**
  * @brief Rotiert Kamera
  */
-void Camera::rotate(Axis axis, float step) {
+void Camera::rotate(int axis, float step) {
     static float x = 0.0f;
 
     if (axis == X) {
@@ -134,19 +134,19 @@ void Camera::moveBackward(float step) {
 }
 
 void Camera::rotateUp(float step) {
-    rotate(Axis::X, fabs(step));
+    rotate(X, fabs(step));
 }
 
 void Camera::rotateDown(float step) {
-    rotate(Axis::X, -fabs(step));
+    rotate(X, -fabs(step));
 }
 
 void Camera::rotateLeft(float step) {
-    rotate(Axis::Y, fabs(step));
+    rotate(Y, fabs(step));
 }
 
 void Camera::rotateRight(float step) {
-    rotate(Axis::Y, -fabs(step));
+    rotate(Y, -fabs(step));
 }
 
 
@@ -192,12 +192,7 @@ static Camera &camera = *current_camera;
 static const float move_step     = 9.0f;
 static const float rotation_step = 5.0f;
 
-/**
- * @brief Konvertiert GLUT Keycodes und reicht sie an den eigentlichen Callback
- */
-void GLUTCameraCallback(int key, bool ascii) {
-	CameraCallback((ascii) ? toupper(key) : key + 256);
-}
+
 
 /**
  * @brief Eigentliche Tastatur-Kamerasteuerung

@@ -17,10 +17,10 @@ public:
 	CoordinateSystem(const Vector& x, const Vector& y, const Vector& z);
 
 	void translate(const Vector& v) const;
-	void rotate(Axis axis, float angle);
-	void rotate(const Vector& v, Axis axis, float angle);
+	void rotate(int axis, float angle);
+	void rotate(const Vector& v, int axis, float angle);
 	void setOrigin(const Vector& v);
-	const Vector& getAxis(Axis axis) const;
+	const Vector& getAxis(int axis) const;
 	const Vector& getOrigin(void) const;
 #ifdef __DEBUG__
 	void draw(float, int, int g = 0) const;

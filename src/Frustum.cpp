@@ -202,7 +202,7 @@ void ViewingFrustum::translate(const Vector &v) {
 =================================================================================
 Rotiert Kegelstumpf
 =================================================================================*/
-void ViewingFrustum::rotate(const Vector &v,Axis axis,float angle) {
+void ViewingFrustum::rotate(const Vector &v,int  axis,float angle) {
     angles[axis] += angle;
     // Überschreibt alte unrotierte Eckpunkte
     std::copy(unrotated_vertices, unrotated_vertices + 8, vertices);

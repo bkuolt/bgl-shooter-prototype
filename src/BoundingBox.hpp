@@ -146,9 +146,6 @@ public:
 
 //========================================================================================================
 
-
-void GLUTCameraCallback(int key, bool ascii);
-
 namespace CD {
 	bool WouldHaveWallCollision(const Vector&);
 }  // namespace CD
