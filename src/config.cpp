@@ -1,6 +1,8 @@
+#undef UNICODE
 #include "Windows.h"
-#include "GLEE.h"
-#include "GLUT.h"
+#include<gl/glew.h>
+#include<gl/glut.h>
+
 #include "Config.h"
 #include <cstdio>
 #include <string>

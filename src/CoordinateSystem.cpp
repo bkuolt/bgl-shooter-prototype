@@ -1,7 +1,9 @@
 #include "Windows.h"
-#include "GLee.h"
+
+#include <GL/glew.h>
+#include <gl/glut.h>
+
 #include <cstdio>
-#include "GLUT.h"
 #include "CoordinateSystem.h"
 
 #ifdef __DEBUG__

@@ -1,8 +1,11 @@
 #ifndef SKYBOX_H_INCLUDED
 #define SKYBOX_H_INCLUDED
 
-#include "IL/ILUT.h"
+#include "IL/ILUT.h
 #include "Config.h"
+
+
+
 
 class Skybox {
  private:

@@ -1,4 +1,6 @@
 #include "Bsp.h"
+#include "BoundingBox.h"
+#include "Camera.hpp"
 
 AABB *aabbs = NULL;
 GLuint lists;

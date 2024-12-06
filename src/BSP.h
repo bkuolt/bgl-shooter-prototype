@@ -2,18 +2,18 @@
 #define BSP_H_INCLUDED
 
 #include "Windows.h"
-#include "GLEE.h"
 #include "Header.h"
 
 #include <GL/GL.h>
 #include <vector>
 #include <ctime>
-#include <cstdio>
+
 #include <cstdint>
-#include "BoundingBox.h"
+
 #include "MD2.h"
 #include "Skybox.h"
-#include "Sound.h"
+#include "Sound.hpp"
+#include "Vector.h"
 
 /*
 ==============================================================

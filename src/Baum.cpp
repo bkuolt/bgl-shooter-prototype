@@ -335,7 +335,3 @@ bool WouldHaveWallCollision(const Vector &v) {
     camera.sphere.translate(v * -1);
     return result;
 }
-
-// TODO: Steigung und Gravitation!
-
-}

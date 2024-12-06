@@ -1,11 +1,11 @@
 #include "Windows.h"
 #include "IL/ILU.h"
-#include "GLEe.h"
+#include <gl/glew.h>
+
 #include "Bsp.h"
 #include <cmath>
 #include <algorithm>
 #include "IL/IL.h"
-#include "IL/ILU.h"
 
 #include <cstring>
 #include <cstdlib>

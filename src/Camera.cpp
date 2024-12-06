@@ -1,6 +1,9 @@
+#include "Camera.hpp"
+
 #include "BoundingBox.h"
+
 #include "BSP.h"
-#include "GLUT.h"
+#include <gl/glut.h>
 #include <cctype>
 
 static Camera *current_camera = NULL;

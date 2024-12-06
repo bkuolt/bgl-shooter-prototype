@@ -1,11 +1,10 @@
 #ifndef BRUSH_H_
 #define BRUSH_H_
 
-#include "Windows.h"
-#include "GLee.h"
 #include "BoundingBox.h"
-#include "Plane.h"
+#include "Plane.hpp"
 #include "BSP.h"
+
 #include <vector>
 
 class Brush {

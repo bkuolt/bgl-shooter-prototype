@@ -1,5 +1,6 @@
 #include "Windows.h"
-#include "Glee.h"
+#include <gl/glew.h>
+
 #include "BSP.h"
 #include <string>
 #include <cctype>
