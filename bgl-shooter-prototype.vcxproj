@@ -133,45 +133,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bgl-shooter-prototype.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="src\Baum.cpp" />
-    <ClCompile Include="src\BoundingBox.cpp" />
-    <ClCompile Include="src\BoundingVolume.cpp" />
+    <ClCompile Include="src\bounding_box.cpp" />
+    <ClCompile Include="src\bounding_volume.cpp" />
     <ClCompile Include="src\Brush.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\config.cpp" />
-    <ClCompile Include="src\CoordinateSystem.cpp" />
+    <ClCompile Include="src\coordinate_system.cpp" />
     <ClCompile Include="src\data.cpp" />
     <ClCompile Include="src\draw.cpp" />
-    <ClCompile Include="src\Frustum.cpp" />
+    <ClCompile Include="src\frustum.cpp" />
     <ClCompile Include="src\lightmap.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\plane.cpp" />
     <ClCompile Include="src\SpeedUp.cpp" />
     <ClCompile Include="src\Tree.cpp" />
     <ClCompile Include="src\WallCollision.cpp" />
-    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="vector.cpp" />
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.hpp" />
-    <ClInclude Include="src\BoundingBox.hpp" />
+    <ClInclude Include="src\bounding_box.hpp" />
     <ClInclude Include="src\Brush.hpp" />
     <ClInclude Include="src\BSP.hpp" />
+    <ClInclude Include="src\camera.hpp" />
     <ClInclude Include="src\Config.hpp" />
-    <ClInclude Include="src\CoordinateSystem.hpp" />
-    <ClInclude Include="src\Frustum.hpp" />
+    <ClInclude Include="src\coordinate_system.hpp" />
+    <ClInclude Include="src\frustum.hpp" />
     <ClInclude Include="src\header.h" />
     <ClInclude Include="src\ID_MD2.hpp" />
     <ClInclude Include="src\key.hpp" />
-    <ClInclude Include="src\Line.hpp" />
+    <ClInclude Include="src\line.hpp" />
+    <ClInclude Include="src\math.hpp" />
     <ClInclude Include="src\MD2.hpp" />
-    <ClInclude Include="src\Plane.hpp" />
+    <ClInclude Include="src\plane.hpp" />
     <ClInclude Include="src\Skybox.hpp" />
     <ClInclude Include="src\Sound.hpp" />
     <ClInclude Include="src\SpeedUp.hpp" />
-    <ClInclude Include="src\Vector.hpp" />
+    <ClInclude Include="src\vector.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="deps\README-win32.txt" />

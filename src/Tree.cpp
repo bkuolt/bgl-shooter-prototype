@@ -6,6 +6,7 @@
 
 std::vector<int32_t> clusters_leafs[100000];
 
+enum { X, Y, Z };
 
 /**
  * @brief Sucht alle Blätter,die zu einem Cluster gehören

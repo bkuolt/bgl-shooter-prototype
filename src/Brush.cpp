@@ -1,5 +1,6 @@
 #include "Brush.hpp"
 
+namespace bgl {
 
 Brush::Brush(void) : contents(0)
 {}
@@ -82,3 +83,5 @@ bool Brush::intersects(const BoundingSphere &sphere) const {
      else
         return false;
 }
+
+}  // namespace bgl

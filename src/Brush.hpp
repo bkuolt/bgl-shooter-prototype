@@ -1,12 +1,13 @@
 #ifndef BRUSH_H_
 #define BRUSH_H_
 
-#include "BoundingBox.hpp"
-#include "Plane.hpp"
+#include "bounding_box.hpp"
+#include "plane.hpp"
 #include "BSP.hpp"
 
 #include <vector>
 
+namespace bgl {
 class Brush {
 public:
 	Brush(void);
@@ -20,4 +21,5 @@ private:
 	int contents;
 };
 
+}  // namespace bgl
 #endif  // BRUSH_H_

@@ -1,4 +1,5 @@
-#include "BoundingBox.hpp"
+#include "bounding_box.hpp"
+
 #include "OpenGL.hpp"
 
 #include <algorithm>
@@ -6,6 +7,10 @@
 #undef near;  // TODO
 #undef far;   // TODO
 
+namespace bgl {
+
+
+	enum { A, B, C, D, E, F, G, H };
 /*
 F-------------L-------------G
 |\            |            /|
@@ -223,3 +228,5 @@ void ViewingFrustum::rotate(const Vector &v,int  axis,float angle) {
     // Ebenen neu berechnen
     calculatePlanes();
 }
+
+}  // namespace bgl

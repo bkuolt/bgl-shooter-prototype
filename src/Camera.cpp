@@ -1,14 +1,17 @@
-#include "Camera.hpp"
-#include "BoundingBox.hpp"
-#include "CoordinateSystem.hpp"
-#include "BSP.hpp"
-#include "Vector.hpp"
-
 #undef near;
 #undef far;
 
 #include <gl/glut.h>
 #include <cctype>
+
+#include "camera.hpp"
+#include "bounding_box.hpp"
+#include "coordinate_system.hpp"
+#include "BSP.hpp"
+#include "vector.hpp"
+
+
+namespace bgl {
 
 static Camera *current_camera = NULL;
 
@@ -282,4 +285,6 @@ void CameraCallback(int button, int state, int x, int y) {
     // verabrbeite Mausbewegung
     CameraCallback(x, y);
 }
+
+}  // namespace bgl
 #endif

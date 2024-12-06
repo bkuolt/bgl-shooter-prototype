@@ -3,6 +3,7 @@
 
 #include "Vector.hpp"
 
+namespace bgl {
 
 class Line {
  public:
@@ -121,5 +122,7 @@ class Ray : public Line {
 		return reach;
 	}
 };
+
+}  // namespace bgl
 
 #endif  // LINE_H_

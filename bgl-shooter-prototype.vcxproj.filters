@@ -24,9 +24,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bgl-shooter-prototype.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="src\Baum.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -60,22 +57,22 @@
     <ClCompile Include="Sound.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\Frustum.cpp">
+    <ClCompile Include="src\frustum.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\BoundingBox.cpp">
+    <ClCompile Include="src\bounding_box.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\CoordinateSystem.cpp">
+    <ClCompile Include="src\coordinate_system.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\Plane.cpp">
+    <ClCompile Include="src\plane.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\BoundingVolume.cpp">
+    <ClCompile Include="src\bounding_volume.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
-    <ClCompile Include="Vector.cpp">
+    <ClCompile Include="vector.cpp">
       <Filter>Quelldateien\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
@@ -113,28 +110,31 @@
     <ClInclude Include="src\SpeedUp.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="src\vector.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bounding_box.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\plane.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\line.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\frustum.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\coordinate_system.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math.hpp">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\camera.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
     <ClInclude Include="src\Sound.hpp">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Vector.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\BoundingBox.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Plane.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Line.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Frustum.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CoordinateSystem.hpp">
-      <Filter>Headerdateien\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

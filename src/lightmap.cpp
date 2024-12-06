@@ -12,6 +12,8 @@
 #define U 0
 #define V 1
 
+enum { X, Y, Z };  // TODO
+
 uint32_t GetVertex(uint32_t face, uint32_t i) {
 	int edge;
 	int vertex = 0;

@@ -6,6 +6,8 @@
 #include <vector>
 #include <bitset>
 
+namespace bgl {
+
 extern Camera camera;
 extern std::vector<std::vector<int32_t> > cluster_leafs;
 extern GLuint lists;
@@ -343,3 +345,5 @@ namespace CD {
 			camera.sphere.translate(v * -1);
 			return result;
 		}
+
+	}  // namespece bgl

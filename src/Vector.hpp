@@ -10,13 +10,19 @@
 
 #define M_PI 3.14159265358979323846
 
+
+namespace bgl {
+
+
 constexpr float RadianToDegree(float angle) {
 	return angle * (180.0f / M_PI);
 };
 
+
 const int X = 0;
 const int Y = 1;
 const int Z = 2;
+
 
 class Vector {
 private:
@@ -64,6 +70,8 @@ public:
 
 };
 
+using vec3 = Vector;
+
 
 static inline float ScalarMultiple(const Vector& u, const Vector& v) {
 	// u   = s*v
@@ -107,5 +115,7 @@ static inline Vector Project(const Vector& sis, const Vector& v) {
 	return Vector();
 	//return (v * DotProduct(sis, v)) * (1.0f / v.length());
 }
+
+}  // namespace bgl
 
 #endif
