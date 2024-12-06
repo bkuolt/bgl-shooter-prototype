@@ -1,8 +1,8 @@
 #ifndef PLANE_HPP
 #define PLANE_HPP
 
-#include "Line.h"
-#include "Vector.h"
+#include "Line.hpp"
+#include "Vector.hpp"
 
 #include <cstdio>
 #include <utility>
@@ -17,6 +17,9 @@ public:
 
 public:
 	Plane();
+	Plane(const Plane&)  = default;
+	Plane& operator=(const Plane&) = default;
+
 	Plane(const Vector& P1, const Vector& P2, const Vector& P3);
 
 	Plane(float a, float b, float c, float d);

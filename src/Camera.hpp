@@ -1,8 +1,8 @@
 
 
-#include "CoordinateSystem.h"
+#include "CoordinateSystem.hpp"
 #include "Frustum.hpp"
-#include "Vector.h"
+#include "Vector.hpp"
 
 
 class Camera {

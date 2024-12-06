@@ -1,4 +1,4 @@
-#include "Brush.h"
+#include "Brush.hpp"
 
 
 Brush::Brush(void) : contents(0)

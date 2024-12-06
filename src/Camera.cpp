@@ -1,8 +1,12 @@
 #include "Camera.hpp"
+#include "BoundingBox.hpp"
+#include "CoordinateSystem.hpp"
+#include "BSP.hpp"
+#include "Vector.hpp"
 
-#include "BoundingBox.h"
+#undef near;
+#undef far;
 
-#include "BSP.h"
 #include <gl/glut.h>
 #include <cctype>
 
@@ -109,9 +113,6 @@ void Camera::moveRight(float step) {
     translate(CrossProduct(Vector(0.0f, 1.0f, 0.0f), getFocus()).normalize() * -fabs(step));
 }
 
-/**
- * @brief Bewegt Kamera nach oben bzw. nach unten
- */
 void Camera::moveUp(float step) {
     translate(Vector(0.0f, fabs(step), 0.0f));
 }
@@ -132,31 +133,23 @@ void Camera::moveBackward(float step) {
     translate(Vector(getFocus()[X], 0.0f, getFocus()[Z]).normalize() * -fabs(step));
 }
 
-/**
- * @brief Rotiert Kamera nach oben bzw. nach unten
- */
 void Camera::rotateUp(float step) {
-    rotate(X, fabs(step));
+    rotate(Axis::X, fabs(step));
 }
 
 void Camera::rotateDown(float step) {
-    rotate(X, -fabs(step));
+    rotate(Axis::X, -fabs(step));
 }
 
-/**
- * @brief Rotiert Kamera nach links bzw. nach rechts
- */
 void Camera::rotateLeft(float step) {
-    rotate(Y, fabs(step));
+    rotate(Axis::Y, fabs(step));
 }
 
 void Camera::rotateRight(float step) {
-    rotate(Y, -fabs(step));
+    rotate(Axis::Y, -fabs(step));
 }
 
-/**
- * @brief Gibt Kameraposition zurück
- */
+
 const Vector& Camera::getPosition(void) const {
     return position;  // Könnte Probleme bei der AABB Kollisionserkennung geben!
 }

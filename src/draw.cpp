@@ -1,9 +1,9 @@
 #include <OpenGL.hpp>
 
-#include "BSP.h"
+#include "BSP.hpp"
 #include <IL/IL.h>
 #include <IL/ILUT.h>
-#include "Config.h"
+#include "Config.hpp"
 
 /**
  * @brief Rendert Polygon (Flags als Info)

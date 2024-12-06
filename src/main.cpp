@@ -1,24 +1,23 @@
 #undef UNICODE
-
+#define _WIN32;
 #define _WIN32_WINNT  0x0501
 #include "Windows.h"
 
 #include "OpenGL.hpp"
 #include <gl/glut.h>
 
-#include "BSP.h"
-
 #include <string>
 #include <stdlib.h>
 #include <ctype.h>
 
-#include <Camera.hpp>
+#include "BSP.hpp"
+#include "Camera.hpp"
 #include "Frustum.hpp"
-#include "BoundingBox.h"
-#include "MD2.h"
-
+#include "BoundingBox.hpp"
+#include "MD2.hpp"
 #include "Sound.hpp"
-#include "Config.h"
+#include "Config.hpp"
+
 #include "Wincon.h"
 
 

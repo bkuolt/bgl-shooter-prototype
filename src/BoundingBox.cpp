@@ -1,4 +1,4 @@
-#include "BoundingBox.h"
+#include "BoundingBox.hpp"
 
 #include <gl/glut.h>
 #include <set>

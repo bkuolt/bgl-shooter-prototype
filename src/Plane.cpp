@@ -1,8 +1,9 @@
 ﻿#include "OpenGL.hpp"
 #include "Plane.hpp"
-#include "CoordinateSystem.h"
+#include "CoordinateSystem.hpp"
+#include "Vector.hpp"
 
-#include <stdio.h>
+using X = Axis::X;
 
 /*
 n   ^u
@@ -13,48 +14,46 @@ n   ^u
 O--------------->v
 */
 
-
-Plane::Plane() {}
 /**
  * @brief Berechnet aus drei Punkten die Ebene
  */
 Plane::Plane(const Vector& P1, const Vector& P2, const Vector& P3) : p(P1) {
-    Vector normal;
+	Vector normal;
 
-    // berechnet Normale
-    normal = CrossProduct((u = P2 - P1), (v = P3 - P1)).normalize();
-    // bestimmt Hessesche Normalenform der Ebene: D = -(Ax + By + Cz)
-    equation[A] = normal[X];
-    equation[B] = normal[Y];
-    equation[C] = normal[Z];
-    equation[D] = -DotProduct(normal, p);
+	// berechnet Normale
+	normal = CrossProduct((u = P2 - P1), (v = P3 - P1)).normalize();
+	// bestimmt Hessesche Normalenform der Ebene: D = -(Ax + By + Cz)
+	equation[A] = normal[X];
+	equation[B] = normal[Y];
+	equation[C] = normal[Z];
+	equation[D] = -DotProduct(normal, p);
 }
 
 Plane::Plane(void) {
-    equation[A] = equation[B] = equation[C] = equation[D] = 0.0f;
+	equation[A] = equation[B] = equation[C] = equation[D] = 0.0f;
 }
 
 Plane::Plane(float a, float b, float c, float d) {
-    equation[A] = a;
-    equation[B] = b;
-    equation[C] = c;
-    equation[D] = d;
+	equation[A] = a;
+	equation[B] = b;
+	equation[C] = c;
+	equation[D] = d;
 }
 
 /**
  * @brief Gibt die Normale der Ebene zur�ck
  */
 Vector Plane::getNormal(void) const {
-    return Vector(equation[A], equation[B], equation[C]);
+	return Vector(equation[A], equation[B], equation[C]);
 }
 
 /**
  * @brief Invertiert die Normale
  */
 Vector Plane::invertNormal(void) {
-    equation[A] *= -1.0f;
-    equation[B] *= -1.0f;
-    equation[B] *= -1.0f;
+	equation[A] *= -1.0f;
+	equation[B] *= -1.0f;
+	equation[B] *= -1.0f;
 }
 
 
@@ -63,16 +62,16 @@ Vector Plane::invertNormal(void) {
 ========================================================================
 Konstruktoren
 ========================================================================*/
-Plane::Plane(const Vector &P1,const Vector &P2,const Vector &P3)
+Plane::Plane(const Vector& P1, const Vector& P2, const Vector& P3)
 {
-    p = P1;
-    u = (P2 - P1).normalize();
-    v = (P3 - P1).normalize();
+	p = P1;
+	u = (P2 - P1).normalize();
+	v = (P3 - P1).normalize();
 }
 
 Vector Plane::getNormal(void) const
 {
-    return CrossProduct(u,v);
+	return CrossProduct(u, v);
 }
 
 
@@ -166,13 +165,14 @@ void Plane::draw(float s, float t) const {
 	glVertex3f(b[X], b[Y], b[Z]);
 	glEnd();
 
-	//Normalen
+	// Normalen
 	glColor3f(0, 1, 0);
 	glBegin(GL_LINES);
 	glVertex3f(0, 0, 0);
 
-	auto tmp = getNormal() * 10;  // TO: avoid warning/compile error
-	glVertex3fv((&tmp).begin());
+	auto pointer = getNormal().begin() + 10;  // TO: avoid warning/compile error
+	glVertex3fv(pointer);
+
 	glEnd();
 
 	glPopMatrix();

@@ -1,6 +1,10 @@
-#include "BoundingBox.h"
-#include <GL/GL.h>
+#include "BoundingBox.hpp"
+#include "OpenGL.hpp"
+
 #include <algorithm>
+#include <set>
+#undef near;  // TODO
+#undef far;   // TODO
 
 /*
 F-------------L-------------G
@@ -174,7 +178,7 @@ bool ViewingFrustum::isWithin(const Vector &P) const {
 * HINWEIS: �berpr�ft,ob eine AABB aus der Verwaltungsliste den Kegelstumpf      *
 *          schneidet!                                                           *
 *********************************************************************************/
-extern std::set<AABB*> list;
+extern std::set<AxisAlignedBoundingBox*> list;
 
 bool ViewingFrustum::isWithin(void) const {
     for (std::set<AABB*>::const_iterator iterator = list.begin(); iterator != list.end(); ++iterator)
