@@ -1,75 +1,87 @@
 # BGL Shooter Tech Demo
 
-A modernized, high-performance **C++23** Quake II BSP and MD2 rendering engine tech demo targeting Linux (amd64 / Ubuntu).
+![BGL Shooter Prototype](screenshot.png)
+
+A modernized, high-performance **C++23** Quake II BSP and MD2 rendering engine tech demo targeting modern 64-bit Linux.
 
 > [!NOTE]
 > **Historical Retro Codebase (~20 Years Old):**  
-> Originally developed around 2004–2006 for Windows, this project is a historical 3D tech demo powered by the **legacy OpenGL 1.x/2.x fixed-function pipeline** (`glBegin`/`glEnd`, `glMatrixMode`, fixed-function lightmap blending with `GL_MODULATE`, display lists, and classic texture environments).  
-> The codebase has been fully modernized to build with **C++23**, **GLM**, **spdlog**, **Conan v2**, **CMake**, and run seamlessly on modern Linux desktops while preserving its authentic 2000s graphics rendering pipeline and retro aesthetics.
+> Originally developed around 2004–2006 for Windows, this project is a historical 3D first-person tech demo powered by the **legacy OpenGL 1.x/2.x fixed-function pipeline** (`glBegin`/`glEnd`, `glMatrixMode`, fixed-function lightmap blending with `GL_MODULATE`, display lists, and classic texture environment stages).  
+> 
+> The codebase has been fully modernized to build with **C++23**, **GLM**, **spdlog**, **RAII memory management**, **Conan v2**, and **CMake**, running natively on modern Linux desktops while preserving its authentic early 2000s graphics rendering pipeline and retro aesthetics.
 
 ---
 
-## Key Features & Modernization Architecture
+## 🚀 Key Features & Modernization Architecture
 
-- **Legacy OpenGL 1.x/2.x Fixed-Function Engine:** Preserves original Quake II BSP map rendering, multi-textured lightmaps (`GL_TEXTURE0` / `GL_TEXTURE1`), MD2 animated models, and PVS visibility clusters using fixed-function pipeline mechanics.
-- **C++23 Standard:** Upgraded to the modern C++23 ISO standard with clean architecture across `src/core`, `src/gfx`, `src/math`, `src/physics`, `src/input`, and `src/audio`.
-- **spdlog Logging:** Integrated `spdlog` for structured, timestamped console logging and error reporting.
-- **GLM Math Integration:** Replaced custom legacy vector/matrix math with `glm::vec3` and GLM extension utilities.
-- **Conan v2 & CMake:** Fully managed third-party dependencies (`FreeGLUT`, `GLEW`, `DevIL`, `FreeALUT`, `OpenAL`, `GLM`, `spdlog`) via Conan 2.x and CMake 3.20+.
-- **Cross-Platform Compatibility:** Replaced Windows-specific legacy headers (`windows.h`, `timeGetTime`) with portable standard library and FreeGLUT primitives.
-
----
-
-## System Requirements
-
-- **OS:** Linux (Ubuntu / Debian x86_64)
-- **Compiler:** GCC 13+ or Clang 16+ with C++23 support
-- **Build Tools:** CMake 3.20+, Conan 2.x, Task runner (`task`), `clang-format`
-- **Graphics & Audio:** OpenGL-compatible graphics driver, OpenAL / ALSA backend
+* **Retro OpenGL 1.x/2.x Graphics Engine:** Preserves original Quake II BSP map rendering, multi-textured lightmap passes (`GL_TEXTURE0` / `GL_TEXTURE1`), animated MD2 3D models with vertex interpolation, and PVS (Potentially Visible Set) cluster culling using classic fixed-function mechanics.
+* **C++23 Modern Standard:** Upgraded to the modern C++23 ISO standard with strict RAII containers (`std::vector`, `std::unique_ptr`), Rule-of-Five resource management for OpenAL audio, and zero raw dynamic allocations/memory leaks.
+* **spdlog Console Logging:** Integrated `spdlog` for clean, timestamped structured console logging and diagnostics across all engine subsystems.
+* **GLM Math Integration:** Migrated legacy 3D vector and matrix calculations to modern `glm::vec3` and GLM extension utilities.
+* **Conan v2 & CMake Build Pipeline:** Automated dependency management (`FreeGLUT`, `GLEW`, `DevIL`, `FreeALUT`, `OpenAL`, `GLM`, `spdlog`) via Conan 2.x and CMake 3.20+.
+* **Linux Desktop Compatibility:** Replaced legacy Windows API calls (`windows.h`, `timeGetTime`) with portable standard C++ library primitives, FreeGLUT windowing, and X11/Wayland support.
 
 ---
 
-## Building and Running
+## 🛠️ System Requirements
 
-### 1. Install Conan Dependencies
+* **Operating System:** Linux (Ubuntu 22.04+ / Debian 12+ x86_64)
+* **Compiler:** GCC 13+ or Clang 16+ (with full C++23 support)
+* **Build Tools:** CMake 3.20+, Conan 2.x, `go-task` (`task`), `clang-format`
+* **Graphics & Audio Drivers:** OpenGL-compatible graphics driver, OpenAL / ALSA audio backend
+
+---
+
+## ⚙️ Building and Running
+
+### 1. Install Dependencies (Conan v2)
 
 ```bash
 task setup
 ```
 
-### 2. Configure & Build Project
+### 2. Configure Project
 
 ```bash
 task configure
+```
+
+### 3. Build Executable
+
+```bash
 task build
 ```
 
-### 3. Run Demo
+### 4. Run Technical Demo
 
 ```bash
 task run
 ```
 
-### Additional Commands
+### Utility Commands
 
-- **Format Codebase:** `task format`
-- **Clean Build Directory:** `task clean`
-
----
-
-## Configuration
-
-Configuration settings are stored in English within `bin/configuration.ini`:
-
-- `Windowed`: Set to `1` for windowed mode or `0` for fullscreen mode.
-- `ResolutionX` / `ResolutionY`: Window or display resolution (`-1` selects optimal desktop resolution).
-- `PositionX`, `PositionY`, `PositionZ`: Initial 3D camera spawn position.
-- `RotationX`, `RotationY`, `RotationZ`: Initial camera orientation angles.
-- `Audio`: Enable/disable background music and sound effects (`1` or `0`).
-- `Skybox` / `AnimateWater`: Render toggles for environment and shader effects.
+* **Format Code:** `task format`
+* **Clean Build Tree:** `task clean`
 
 ---
 
-## License
+## 🎮 Configuration Settings
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Engine configuration settings are managed in English within `bin/configuration.ini`:
+
+| Setting | Default Value | Description |
+| :--- | :--- | :--- |
+| `Windowed` | `0` | `0` for Fullscreen mode (Full HD), `1` for Windowed mode. |
+| `ResolutionX` | `1920` | Screen width in pixels (`-1` selects desktop default). |
+| `ResolutionY` | `1080` | Screen height in pixels (`-1` selects desktop default). |
+| `PositionX`, `Y`, `Z` | `500, 500, 500` | Initial 3D player spawn position in map space. |
+| `RotationX`, `Y`, `Z` | `0, 0, 0` | Initial player camera viewing orientation. |
+| `Audio` | `1` | Enable (`1`) or disable (`0`) OpenAL ambient sound effects and music. |
+| `Skybox` | `1` | Enable (`1`) or disable (`0`) 3D skybox rendering. |
+| `AnimateWater` | `1` | Enable (`1`) or disable (`0`) animated water surface textures. |
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**. See the `LICENSE` file for full terms.
