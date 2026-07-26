@@ -1,33 +1,29 @@
-#define _WIN32_WINNT  0x0501
-#include "Windows.h"
-#include "GLee.h"
-#include "BSP.h"
-#include <GL/glut.h>
+#include "bsp.hpp"
+#include "camera.hpp"
+#include "config.hpp"
+#include "md2.hpp"
+#include "sound.hpp"
+#include <GL/glew.h>
+#include <GL/freeglut.h>
+#include <cctype>
+#include <cstdio>
+#include <cstdlib>
 #include <string>
-#include <stdlib.h>
-#include <ctype.h>
-#include "GL/GL.h"
-#include "BoundingBox.h"
-#include "MD2.h"
-#include "AL.h"
-#include "ALUT.h"
-#include "Sound.h"
-#include "Config.h"
-#include "Wincon.h"
 
+#include <spdlog/spdlog.h>
 
-Weapon weapon;
 Camera camera(Vector(0, 0, 0), Vector(0, 0, -1), ViewingFrustum(1, 1, 0.5, 3500.0));
 
-/**
- * @brief Haupt-Renderfunktion
- */
+static bool is_initialized = false;
+
 static void display(void) {
+    if (!is_initialized) {
+        return;
+    }
     static int fps = 0;
     static int last_fps = 0;
     static int time = GetElapsedTime();
 
-    // Rendert BSP
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     camera.set();
     CD::RenderVisibleClusters();
@@ -39,7 +35,6 @@ static void display(void) {
         skybox.draw();
     }
 
-    // Zeichnet Waffe
     glMatrixMode(GL_TEXTURE);
     glLoadIdentity();
     glMatrixMode(GL_MODELVIEW);
@@ -50,7 +45,6 @@ static void display(void) {
     glRotatef(90, 0, 0, 1);
     weapon.animate();
 
-    // Zeichnet Fadenkreuz
     static const float l = 0.05f;
     glLineWidth(1);
 
@@ -62,35 +56,29 @@ static void display(void) {
     glLoadIdentity();
 
     glBegin(GL_LINES);
-        glColor4f(0.5f, 0.5f, 0.5f, 1.0f);
-        glVertex2f(-l / 2, 0.0f);
-        glVertex2f(l / 2, 0.0f);
-        glVertex2f(0.0f, l / 2.0f);
-        glVertex2f(0.0f, -l / 2.0f);
+    glColor4f(0.5f, 0.5f, 0.5f, 1.0f);
+    glVertex2f(-l / 2, 0.0f);
+    glVertex2f(l / 2, 0.0f);
+    glVertex2f(0.0f, l / 2.0f);
+    glVertex2f(0.0f, -l / 2.0f);
     glEnd();
 
-    // Zeichnet Texteinblendungen:
-    // Holt Informationen
     static const char* text_bgl = "BGL BSP Rendering Tech Demo!";
     const char* text_cd = CD::GetCollisionDetetctionString();
     static char text_tree[100];
-    sprintf(text_tree, "FPS: %3i, %s", last_fps, CD::GetVisibiltyString());
+    std::snprintf(text_tree, sizeof(text_tree), "FPS: %3i, %s", last_fps, CD::GetVisibiltyString());
 
-    // BGL Info
-    glColor3f((GetElapsedTime() - time) / 1000.0, 0.0f, 0.0f);
+    glColor3f((GetElapsedTime() - time) / 1000.0f, 0.0f, 0.0f);
     glWindowPos2i(0, 10);
     glutBitmapString(GLUT_BITMAP_HELVETICA_18, text_bgl);
 
-    // FPS und Bauminfo
     glColor3f(1.0f, 1.0f, 1.0f);
     glWindowPos2i(0, glutGet(GLUT_WINDOW_HEIGHT) - 18);
     glutBitmapString(GLUT_BITMAP_HELVETICA_18, text_tree);
 
-    // Kollisionserkennunginfo
     glWindowPos2i(0, glutGet(GLUT_WINDOW_HEIGHT) - 40);
     glutBitmapString(GLUT_BITMAP_HELVETICA_18, text_cd);
 
-    // Misst FPS
     if (GetElapsedTime() >= time + 1000) {
         time = GetElapsedTime();
         last_fps = fps;
@@ -103,12 +91,7 @@ static void display(void) {
 }
 
 void CameraCallback(int x, int y);
-void CameraCallback(int x, int y, int button, int state);
 
-/*
-===========================================================================
-GLUT Callbacks
-===========================================================================*/
 static void key(unsigned char key, int x, int y) {
     GLUTCameraCallback(key, true);
     CameraCallback(x, y);
@@ -125,67 +108,58 @@ static void idle(void) {
 }
 
 static void resize(int width, int height) {
-    display();
+    glViewport(0, 0, width, height);
+    if (is_initialized) {
+        display();
+    }
 }
 
-/**
- * @brief Infotext 
- */
-static HANDLE hStdOut;
 static void PrintInfo(void) {
-    hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-
-    SetConsoleTitle("BGL Rendering Tech Demo!");
-    SetConsoleTextAttribute(hStdOut, FOREGROUND_RED | FOREGROUND_INTENSITY);
-    printf("=========================================================\n");
-    printf("=         BGL BSP v38 Rendering (Prototype)             =\n");
-    printf("=     This demo does not represent the final quality!   =\n");
-    printf("=========================================================\n");
-    printf("= OpenGL: %s\n", glGetString(GL_VERSION));
-    printf("=    BGL: %s, %s [German]\n", __DATE__, __TIME__);
-    printf("=========================================================\n");
-    SetConsoleTextAttribute(hStdOut, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
+    spdlog::info("=========================================================");
+    spdlog::info("=         BGL BSP v38 Rendering (Prototype)             =");
+    spdlog::info("=     This demo does not represent the final quality!   =");
+    spdlog::info("=========================================================");
+    const char* gl_ver = reinterpret_cast<const char*>(glGetString(GL_VERSION));
+    spdlog::info("= OpenGL: {}", gl_ver ? gl_ver : "Unknown");
+    spdlog::info("=    BGL: {}, {}", __DATE__, __TIME__);
+    spdlog::info("=========================================================");
 }
 
-/*
-===========================================================================
-Main
-===========================================================================*/
-static void Init(void) {
+static void Init(int argc, char* argv[]) {
     LoadConfiguration();
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_ALPHA | GLUT_DOUBLE | GLUT_DEPTH);
 
-    const auto width  = GetConfigurationInt(ResolutionX);
-    const auto = GetConfigurationInt(ResolutionY);
+    const int width = (GetConfigurationInt(ResolutionX) > 0) ? GetConfigurationInt(ResolutionX) : 1920;
+    const int height = (GetConfigurationInt(ResolutionY) > 0) ? GetConfigurationInt(ResolutionY) : 1080;
 
+    glutInitWindowSize(width, height);
     if (GetConfigurationInt(Windowed)) {
-        glutInitWindowSize(width, height);
-        glutInitWindowPosition(glutGet(GLUT_SCREEN_WIDTH)  / 2 - width  / 2,
+        glutInitWindowPosition(glutGet(GLUT_SCREEN_WIDTH) / 2 - width / 2,
                                glutGet(GLUT_SCREEN_HEIGHT) / 2 - height / 2);
         glutCreateWindow("BGL BSP Rendering Tech Demo");
     } else {
-        char str[100];
-        sprintf(str, "%ix%i:32", width, height);
-        glutGameModeString(str);
-        glutEnterGameMode();
+        glutCreateWindow("BGL BSP Rendering Tech Demo");
+        glutFullScreen();
     }
 
-    // (3) Initialisiert Rendercallbacks
+    GLenum err = glewInit();
+    if (GLEW_OK != err) {
+        spdlog::error("GLEW Error: {}", reinterpret_cast<const char*>(glewGetErrorString(err)));
+    }
+
     glutReshapeFunc(resize);
     glutDisplayFunc(display);
     glutIdleFunc(idle);
     PrintInfo();
 
-    // (3) OpenGL Inititialisierung
     glEnable(GL_CULL_FACE);
     glCullFace(GL_FRONT);
     glClearColor(0, 0, 0, 0);
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
 
-    // (4) Initialisiert Steuerung
     glutSetCursor(GLUT_CURSOR_NONE);
     glutPassiveMotionFunc(CameraCallback);
     glutMotionFunc(CameraCallback);
@@ -193,43 +167,35 @@ static void Init(void) {
     glutKeyboardFunc(key);
     glutSpecialFunc(special);
 
-    /*
-    =============================================================
-    (5) Lädt Daten
-    =============================================================*/
-
-    // (1) Lädt Musikdateien
     if (GetConfigurationInt(PlayAudio)) {
-        printf("Laedt Musikdateien...\n");
-
+        spdlog::info("Loading audio files...");
         alutInit(&argc, argv);
-          gun.load(GetConfigurationString(DataPath) + "sound/weapon.wav");
+        gun.load(GetConfigurationString(DataPath) + "sound/weapon.wav");
         music.load(GetConfigurationString(DataPath) + "sound/music.wav");
         music.play(true);
         music.setVolume(0.25);
     }
 
-    // (2) Lädt Waffenmodel
-    printf("Laedt Waffenmodel...\n");
+    spdlog::info("Loading weapon model...");
     weapon.load(GetConfigurationString(DataPath) + "weapon.md2");
     weapon.putaway();
 
-    // (3) Lädt BSP
-    SetConsoleTextAttribute(hStdOut, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
-    LoadBSP((GetConfigurationString(DataPath) + "maps\\" + GetConfigurationString(Level)).c_str());
+    LoadBSP((GetConfigurationString(DataPath) + "maps/" + GetConfigurationString(Level)).c_str());
 
-    // (6) Positioniert Spieler
-    printf("\tPositioniert Spieler... (letzer Schritt)\n");
+    spdlog::info("Positioning player... (final step)");
 
-    camera.translate(Vector(GetConfigurationFloatv(Position)[X],
-                            GetConfigurationFloatv(Position)[Y],
-                            GetConfigurationFloatv(Position)[Z]));
+    Vector spawn_pos(GetConfigurationFloatv(Position)[X], GetConfigurationFloatv(Position)[Y],
+                     GetConfigurationFloatv(Position)[Z]);
+    SwapAxis(spawn_pos);
+    camera.setPosition(spawn_pos);
     camera.rotate(X, GetConfigurationFloatv(Rotation)[X]);
     camera.rotate(Y, GetConfigurationFloatv(Rotation)[Y]);
+
+    is_initialized = true;
 }
 
-int main(int argc, char *argv[]) {
-    Init();
+int main(int argc, char* argv[]) {
+    Init(argc, argv);
     glutMainLoop();
     return 0;
 }

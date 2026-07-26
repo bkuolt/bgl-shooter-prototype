@@ -1,0 +1,1 @@
+. "/home/bastian/code/bgl-shooter-prototype/build/conanrunenv-release-x86_64.sh"

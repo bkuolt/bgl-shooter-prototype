@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bgl-shooter.dir/link.d"
+  "CMakeFiles/bgl-shooter.dir/src/core/config.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/core/config.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/bsp.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/bsp.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/camera.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/camera.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/coordinate_system.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/coordinate_system.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/draw.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/draw.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/lightmap.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/gfx/lightmap.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/main.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/main.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/math/bounding_box.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/math/bounding_box.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/math/bounding_volume.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/math/bounding_volume.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/math/frustum.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/math/frustum.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/math/plane.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/math/plane.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/physics/baum.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/physics/baum.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/physics/brush.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/physics/brush.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/physics/speed_up.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/physics/speed_up.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/physics/tree.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/physics/tree.cpp.o.d"
+  "CMakeFiles/bgl-shooter.dir/src/physics/wall_collision.cpp.o"
+  "CMakeFiles/bgl-shooter.dir/src/physics/wall_collision.cpp.o.d"
+  "bgl-shooter"
+  "bgl-shooter.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/bgl-shooter.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

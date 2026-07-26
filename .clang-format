@@ -1,0 +1,10 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 120
+UseTab: Never
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Inline
+PointerAlignment: Left
+AccessModifierOffset: -4
+PackConstructorInitializers: NextLine
+SortIncludes: false

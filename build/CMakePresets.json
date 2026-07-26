@@ -1,0 +1,49 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'Unix Makefiles' generator",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "ACLOCAL_PATH": "$penv{ACLOCAL_PATH}:/home/bastian/.conan2/p/xorg-a7814e7f591fa/p/bin/share/aclocal"
+            },
+            "toolchainFile": "conan_toolchain.cmake",
+            "binaryDir": "/home/bastian/code/bgl-shooter-prototype/build"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 12
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "execution": {
+                "jobs": 12
+            },
+            "environment": {
+                "LD_LIBRARY_PATH": "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib:$penv{LD_LIBRARY_PATH}",
+                "DYLD_LIBRARY_PATH": "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib:$penv{DYLD_LIBRARY_PATH}",
+                "ALSA_CONFIG_DIR": "/home/bastian/.conan2/p/b/libal2778a0492b637/p/res/alsa"
+            }
+        }
+    ]
+}

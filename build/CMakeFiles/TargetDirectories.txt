@@ -1,0 +1,3 @@
+/home/bastian/code/bgl-shooter-prototype/build/CMakeFiles/bgl-shooter.dir
+/home/bastian/code/bgl-shooter-prototype/build/CMakeFiles/edit_cache.dir
+/home/bastian/code/bgl-shooter-prototype/build/CMakeFiles/rebuild_cache.dir

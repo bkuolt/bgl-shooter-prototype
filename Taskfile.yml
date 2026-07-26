@@ -1,0 +1,33 @@
+version: '3'
+
+tasks:
+  setup:
+    desc: "Install Conan dependencies"
+    cmds:
+      - CMAKE_POLICY_VERSION_MINIMUM=3.5 conan install . --output-folder=build --build=missing
+
+  configure:
+    desc: "Configure CMake build"
+    cmds:
+      - cmake -B build -DCMAKE_TOOLCHAIN_FILE=build/build/Release/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+
+  build:
+    desc: "Build project"
+    cmds:
+      - cmake --build build -j
+
+  format:
+    desc: "Format code with clang-format"
+    cmds:
+      - find src -type f \( -name "*.cpp" -o -name "*.hpp" -o -name "*.h" \) -exec clang-format -i {} +
+
+  run:
+    desc: "Run bgl-shooter tech demo"
+    dir: bin
+    cmds:
+      - ../build/bgl-shooter
+
+  clean:
+    desc: "Clean build directory"
+    cmds:
+      - rm -rf build
