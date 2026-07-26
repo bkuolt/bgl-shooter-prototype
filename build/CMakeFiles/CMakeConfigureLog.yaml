@@ -29083,3 +29083,3179 @@ events:
       CMAKE_MODULE_PATH:
         - "/home/bastian/code/bgl-shooter-prototype/build"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/FreeGLUT-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/FreeGLUTTargets.cmake:24 (include)"
+      - "build/FreeGLUTConfig.cmake:16 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glut"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib/"
+    found: "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib/libglut.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/FreeGLUT-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/FreeGLUTTargets.cmake:24 (include)"
+      - "build/FreeGLUTConfig.cmake:16 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glut"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib/"
+    found: "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib/libglut.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/mesa-glu-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/mesa-gluTargets.cmake:24 (include)"
+      - "build/mesa-glu-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLU"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib/"
+    found: "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib/libGLU.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv2"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLESv2.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv1_CM"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLESv1_CM.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLX"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLX.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libEGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "OpenGL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libOpenGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLdispatch"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLdispatch.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:120 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv2"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLESv2.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:180 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv1_CM"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLESv1_CM.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:240 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLX"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLX.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:300 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libEGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:360 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "OpenGL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libOpenGL.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libglvnd-Target-release.cmake:420 (conan_package_library_targets)"
+      - "build/libglvndTargets.cmake:24 (include)"
+      - "build/libglvnd-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/mesa-glu-config.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/FreeGLUTConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLdispatch"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib/libGLdispatch.so"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/glew-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/glewTargets.cmake:24 (include)"
+      - "build/glew-config.cmake:16 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLEW"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib/"
+    found: "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib/libGLEW.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/glew-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/glewTargets.cmake:24 (include)"
+      - "build/glew-config.cmake:16 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLEW"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib/"
+    found: "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib/libGLEW.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ILUT"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libILUT.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ILU"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libILU.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "IL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libIL.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ILUT"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libILUT.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:120 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ILU"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libILU.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/DevIL-Target-release.cmake:180 (conan_package_library_targets)"
+      - "build/DevILTargets.cmake:24 (include)"
+      - "build/DevILConfig.cmake:16 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "IL"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/"
+    found: "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib/libIL.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/PNG-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/PNGTargets.cmake:24 (include)"
+      - "build/PNGConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "png"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib/libpng.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/ZLIB-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/ZLIBTargets.cmake:24 (include)"
+      - "build/ZLIBConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/PNGConfig.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "z"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib/"
+    found: "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib/libz.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/TIFF-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/TIFFTargets.cmake:24 (include)"
+      - "build/TIFFConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tiffxx"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib/libtiffxx.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/TIFF-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/TIFFTargets.cmake:24 (include)"
+      - "build/TIFFConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tiff"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib/libtiff.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/LibLZMA-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/LibLZMATargets.cmake:24 (include)"
+      - "build/LibLZMAConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/TIFFConfig.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lzma"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib/"
+    found: "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib/liblzma.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/JPEG-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/JPEGTargets.cmake:24 (include)"
+      - "build/JPEGConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/TIFFConfig.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "jpeg"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib/libjpeg.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/Jasper-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/JasperTargets.cmake:24 (include)"
+      - "build/JasperConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "jasper"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib/"
+    found: "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib/libjasper.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/libsquish-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/libsquishTargets.cmake:24 (include)"
+      - "build/libsquish-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "squish"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib/libsquish.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/lcms-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/lcmsTargets.cmake:24 (include)"
+      - "build/lcms-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/DevILConfig.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lcms2"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib/"
+    found: "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib/liblcms2.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/freealut-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/freealutTargets.cmake:24 (include)"
+      - "build/freealut-config.cmake:16 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "alut"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib/"
+    found: "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib/libalut.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/OpenAL-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/OpenALTargets.cmake:24 (include)"
+      - "build/OpenALConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/freealut-config.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openal"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib/"
+    found: "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib/libopenal.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/ALSA-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/ALSATargets.cmake:24 (include)"
+      - "build/ALSAConfig.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/OpenALConfig.cmake:24 (find_dependency)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/freealut-config.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "asound"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib/"
+    found: "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib/libasound.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/spdlog-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/spdlogTargets.cmake:24 (include)"
+      - "build/spdlog-config.cmake:16 (include)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "spdlog"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib/"
+    found: "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib/libspdlog.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/spdlog-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/spdlogTargets.cmake:24 (include)"
+      - "build/spdlog-config.cmake:16 (include)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "spdlog"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib/"
+    found: "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib/libspdlog.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/fmt-Target-release.cmake:23 (conan_package_library_targets)"
+      - "build/fmtTargets.cmake:24 (include)"
+      - "build/fmt-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/spdlog-config.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "fmt"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib/"
+    found: "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib/libfmt.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/cmakedeps_macros.cmake:32 (find_library)"
+      - "build/fmt-Target-release.cmake:60 (conan_package_library_targets)"
+      - "build/fmtTargets.cmake:24 (include)"
+      - "build/fmt-config.cmake:16 (include)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/spdlog-config.cmake:24 (find_dependency)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "CONAN_FOUND_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "fmt"
+    candidate_directories:
+      - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib/"
+    found: "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib/libfmt.a"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "/home/bastian/.conan2/p/b/freeg36ee898bc1ea9/p/lib"
+        - "/home/bastian/.conan2/p/b/glew54e54715c3231/p/lib"
+        - "/home/bastian/.conan2/p/b/mesa-dad2e7a0d1fa4/p/lib"
+        - "/home/bastian/.conan2/p/b/libgl9b569f45967fa/p/lib"
+        - "/home/bastian/.conan2/p/b/devil7c6c2f9312887/p/lib"
+        - "/home/bastian/.conan2/p/b/libpn515eae1e180b1/p/lib"
+        - "/home/bastian/.conan2/p/b/libti1c41ef0033e08/p/lib"
+        - "/home/bastian/.conan2/p/b/zlib326d69583170b/p/lib"
+        - "/home/bastian/.conan2/p/b/xz_uta66fa801c95b9/p/lib"
+        - "/home/bastian/.conan2/p/b/jaspee9ea4d4426b03/p/lib"
+        - "/home/bastian/.conan2/p/b/libjp4746a7e188968/p/lib"
+        - "/home/bastian/.conan2/p/b/libsqec9ecfc5dc463/p/lib"
+        - "/home/bastian/.conan2/p/b/lcms3c46da213076d/p/lib"
+        - "/home/bastian/.conan2/p/b/freea4ded24f86f55c/p/lib"
+        - "/home/bastian/.conan2/p/b/opena1b53f059501c1/p/lib"
+        - "/home/bastian/.conan2/p/b/libal2778a0492b637/p/lib"
+        - "/home/bastian/.conan2/p/b/spdlo264cb657a1525/p/lib"
+        - "/home/bastian/.conan2/p/b/fmt3317f221fb932/p/lib"
+      CMAKE_PREFIX_PATH:
+        - "/home/bastian/code/bgl-shooter-prototype/build"
+      ENV{PATH}:
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/bastian/.local/bin"
+        - "/home/bastian/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
